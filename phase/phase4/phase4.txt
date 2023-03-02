@@ -1,15 +1,15 @@
-https://jp.mercari.com/item/m96320900669,goten_MGH_no_effect,NA,NEW
-https://jp.mercari.com/item/m91970475200,set_3_wcf_new,NA,NEW
-https://jp.mercari.com/item/m94938411996,vegeta_cooking,NA,NEW
+https://jp.mercari.com/item/m96320900669,goten_MGH_no_effect,JP,NEW
+https://jp.mercari.com/item/m91970475200,set_3_wcf_new,JP,NEW
+https://jp.mercari.com/item/m94938411996,vegeta_cooking,JP,NEW
 https://jp.mercari.com/item/m94952364746,goku_xeno_wcf,JP,2ND
-https://jp.mercari.com/item/m24752028867,vegeta_yura_yura,NA,NEW
+https://jp.mercari.com/item/m24752028867,vegeta_yura_yura,JP,NEW
 https://jp.mercari.com/item/m20753261591,2_wcf_2nd,JP,2ND
 https://jp.mercari.com/item/m30355293458,nappa_hscf,JP,2ND
 https://jp.mercari.com/item/m69011127449,set hscf_naruto,JP,2ND
-https://jp.mercari.com/item/m38008078768,goku_ssj3_tien_hscf,NA,2ND
+https://jp.mercari.com/item/m38008078768,goku_ssj3_tien_hscf,JP,2ND
 https://jp.mercari.com/item/m27373146050,vegeta_match_makers,NA,2ND
 https://jp.mercari.com/item/m68673526247,set_7_wcf_2nd,JP,2ND
-https://jp.mercari.com/item/m50354084671,set_3_archive,NA,NEW
+https://jp.mercari.com/item/m50354084671,set_3_archive,JP,NEW
 https://jp.mercari.com/item/m91359757383,set_3_hscf,NA,2ND
 https://jp.mercari.com/item/m87745695783,set_5_wcf_2nd,JP,2ND
 https://jp.mercari.com/item/m24699558809,goku_msp_x2,NA,2ND
@@ -22,3 +22,7 @@ https://jp.mercari.com/item/m50132235642,goku blue msp,NA,2ND
 https://jp.mercari.com/item/m22548026304,vegetaROS_goku,NA,2ND
 https://jp.mercari.com/item/m54349633610,set_2vegeta,NA,2ND
 https://jp.mercari.com/item/m27275167760,cell_hscf,NA,2ND
+https://jp.mercari.com/item/m28170487318,krilin dxf,NA,2ND
+https://jp.mercari.com/item/m91894068906,set_fig_hiệu_ứng_2nd,NA,2ND
+https://jp.mercari.com/item/m54102969662,set_fide_2nd,NA,2ND
+https://jp.mercari.com/item/m98777037346,vegeta_paint,NA,2ND
