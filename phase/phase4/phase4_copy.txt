@@ -13,11 +13,11 @@ https://jp.mercari.com/item/m50354084671,set_3_archive,JP,NEW
 https://jp.mercari.com/item/m91359757383,set_3_hscf,JP,2ND
 https://jp.mercari.com/item/m87745695783,set_5_wcf_2nd,JP,2ND
 https://jp.mercari.com/item/m24699558809,goku_msp_x2,JP,2ND
-https://jp.mercari.com/item/m96174286610,GX_material_x2,NA,NEW
+https://jp.mercari.com/item/m96174286610,GX_material_x2,JP,NEW
 https://jp.mercari.com/item/m58228889089,set_wcf_5_new_1_2nd,JP,MIXED
 https://jp.mercari.com/item/m17363148562,combo_2_vegeta_hscf,NA,2ND
-https://jp.mercari.com/item/m53777215898,combo_3_wcf_nobase,NA,2ND
-https://jp.mercari.com/item/m85910808687,vegeta_dxf_nobase,NA,2ND
+https://jp.mercari.com/item/m53777215898,combo_3_wcf_nobase,JP,2ND
+https://jp.mercari.com/item/m85910808687,vegeta_dxf_nobase,JP,2ND
 https://jp.mercari.com/item/m50132235642,goku blue msp,NA,2ND
 https://jp.mercari.com/item/m22548026304,vegetaROS_goku,NA,2ND
 https://jp.mercari.com/item/m54349633610,set_2vegeta,NA,2ND
