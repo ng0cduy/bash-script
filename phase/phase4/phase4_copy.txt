@@ -30,3 +30,5 @@ https://jp.mercari.com/item/m38746642830,gotenks_grand_new,NA,NEW
 https://jp.mercari.com/item/m80827728565,set_3_archive,NA,NEW
 https://jp.mercari.com/item/m97930937078,set_9_wcf_2nd,NA,2ND
 https://jp.mercari.com/item/m22442158061,set_4_wcf_2nd,NA,2ND
+https://jp.mercari.com/item/m97842619677,set_3_fig,NA,2ND
+
