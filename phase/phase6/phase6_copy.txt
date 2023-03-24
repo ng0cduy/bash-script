@@ -15,17 +15,25 @@ https://jp.mercari.com/item/m53506569770,Tomica-jeep-pre-order,JP,NEW
 https://jp.mercari.com/item/m35094067064,Tomica set pre-orderx2,JP,NEW
 https://jp.mercari.com/item/m41283458230,Tomica-Mcqueen95,JP,NEW
 https://jp.mercari.com/item/m32505900886,Toyota-sora-pre-order,JP,NEW
-https://jp.mercari.com/item/m38796933705,goku-rose-ssj3,NA,2ND
+https://jp.mercari.com/item/m38796933705,goku-rose-ssj3,JP,2ND
 https://jp.mercari.com/item/m43880377142,goku-hiệu-ứng,JP,2ND
 https://jp.mercari.com/item/m29259095070,buu-dxf,JP,2ND
 https://jp.mercari.com/item/m25234965229,set-3-keychain,NA,2ND
 https://jp.mercari.com/item/m45782078104,set-2-archives,NA,2ND
 https://jp.mercari.com/item/m80716552189,frieza-form-3-wcf,NA,NEW
-https://jp.mercari.com/item/m39100542514,set-3-archive-new,NA,NEW
-https://jp.mercari.com/item/m45998071951,set-3-archive-santa,NA,NEW
+https://jp.mercari.com/item/m39100542514,set-3-archive-new,JP,NEW
+https://jp.mercari.com/item/m45998071951,set-3-archive-santa,JP,NEW
 https://jp.mercari.com/item/m39858337565,record-of-ragnarok,NA,NEW
 https://jp.mercari.com/item/m66121643694,gohan-gotenks-hit-wcf-new,NEW,NA
 https://jp.mercari.com/item/m56683472828,goku câu cá new,JP,NEW
 https://jp.mercari.com/item/m67977736362,set-3-hscf,NA,2ND
 https://jp.mercari.com/item/m64980662923,vegeta-dwc,NA,2ND
 https://jp.mercari.com/item/m60964851052,goku-blue-wcf,NA,2ND
+https://jp.mercari.com/item/m81470099264,gohan-wcf,NA,2ND
+https://jp.mercari.com/item/m82504789778,Buu-SC-gokuSC,NA,2ND
+https://jp.mercari.com/item/m30462096444,Trunks-kefla-wcf-nobase,NA,2ND
+https://jp.mercari.com/item/m22466406730,set-3-megahouse,NA,2ND
+https://jp.mercari.com/item/m74477671191,goku-blue-MH,NA,2ND
+https://jp.mercari.com/item/m40618790679,broly-MGH,NA,2ND
+https://jp.mercari.com/item/m87537457124,goku-chichi-MGH,NA,2ND
+
