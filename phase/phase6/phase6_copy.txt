@@ -23,7 +23,7 @@ https://jp.mercari.com/item/m45782078104,set-2-archives,NA,2ND
 https://jp.mercari.com/item/m80716552189,frieza-form-3-wcf,NA,NEW
 https://jp.mercari.com/item/m39100542514,set-3-archive-new,JP,NEW
 https://jp.mercari.com/item/m45998071951,set-3-archive-santa,JP,NEW
-https://jp.mercari.com/item/m39858337565,record-of-ragnarok,NA,NEW
+https://jp.mercari.com/item/m39858337565,record-of-ragnarok,JP,NEW
 https://jp.mercari.com/item/m66121643694,gohan-gotenks-hit-wcf-new,NEW,NA
 https://jp.mercari.com/item/m56683472828,goku câu cá new,JP,NEW
 https://jp.mercari.com/item/m67977736362,set-3-hscf,NA,2ND
@@ -36,4 +36,8 @@ https://jp.mercari.com/item/m22466406730,set-3-megahouse,NA,2ND
 https://jp.mercari.com/item/m74477671191,goku-blue-MH,NA,2ND
 https://jp.mercari.com/item/m40618790679,broly-MGH,NA,2ND
 https://jp.mercari.com/item/m87537457124,goku-chichi-MGH,NA,2ND
-
+https://jp.mercari.com/item/m98379846982,broly-wcf-kid,NA,2ND
+https://jp.mercari.com/item/m93027318308,set_imagination,NA,2ND
+https://jp.mercari.com/item/m42782025657,set_7_dydo,NA,2ND
+https://jp.mercari.com/item/m69213078652,set_7_gt,NA,2ND
+https://jp.mercari.com/item/m39797168090,Trunks-ssj-hscf,NA,2ND
