@@ -8,16 +8,22 @@ https://jp.mercari.com/item/m42782025657,set_7_dydo,JP,2ND
 https://jp.mercari.com/item/m69213078652,set_7_gt,JP,2ND
 https://jp.mercari.com/item/m39797168090,Trunks-ssj-hscf,JP,2ND
 https://jp.mercari.com/item/m90253603104,set-3-wcf-gohan,JP,2ND
-https://jp.mercari.com/item/m83369631842,set 3 wcf-goten-santa-vegeta,JP,2ND
+https://jp.mercari.com/item/m83369631842,set3wcf-goten-santa-vegeta,JP,2ND
 https://jp.mercari.com/item/m45690661078,hscf-goku-yamcha,JP,2ND
 https://jp.mercari.com/item/m93727191001,goku3-keychain,JP,2ND
-https://jp.mercari.com/item/m52444307154,goku-kid-jump,NA,2ND
+https://jp.mercari.com/item/m52444307154,goku-kid-jump,JP,2ND
 https://jp.mercari.com/item/m59334348062,gohan-kính,NA,2ND
-https://jp.mercari.com/item/m17046616490,frieza-form1-nobox,NA,2ND
-https://jp.mercari.com/item/m37619038266,cell-form-1,NA,2ND
+https://jp.mercari.com/item/m17046616490,frieza-form1-nobox,JP,2ND
+https://jp.mercari.com/item/m37619038266,cell-form-1,JP,2ND
 https://jp.mercari.com/item/m77950911132,khỉ,JP,2ND
 https://jp.mercari.com/item/m88708307997,goku-black,JP,2ND
 https://jp.mercari.com/item/m81014169961,goku-vegeta,JP,2ND
 https://jp.mercari.com/item/m42384466824,vandos-champa,NA,2ND
 https://jp.mercari.com/item/m28268549033,vegeta-cooking,NA,2ND
 https://jp.mercari.com/item/m35022109642,gotenks-vegito-wcf,NA,2ND
+https://jp.mercari.com/item/m30131316205,set2wcfnew,NA,2ND
+https://jp.mercari.com/item/m34993403022,set4wcf2nd,NA,2ND
+https://jp.mercari.com/item/m64545669628,gokumspblue,NA,2ND
+https://jp.mercari.com/item/m85966271161,set2fidedx,NA,2ND
+https://jp.mercari.com/item/m93367985073,goku-jump,NA,2ND
+https://jp.mercari.com/item/m62046649532,2wcfssj3,NA,2ND
