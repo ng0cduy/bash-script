@@ -7,7 +7,7 @@ https://jp.mercari.com/item/m63660112051,vegeta-dxf,JP,2ND
 https://jp.mercari.com/item/m69446428050,goku-kid wcf,JP,2ND
 https://jp.mercari.com/item/m81596385094,gotenks-trunks-ssj,JP,2ND
 https://jp.mercari.com/item/m50310216086,set-3-wcf,JP,2ND
-https://jp.mercari.com/item/m37786790945,vegeta-ichiban-cắm-đít,NA,2ND
+https://jp.mercari.com/item/m37786790945,vegeta-ichiban-cắm-đít,JP,2ND
 https://jp.mercari.com/item/m78494333813,goku-ssj3-wcf,JP,NEW
 https://jp.mercari.com/item/m92974137749,goku-năm-mới,JP,NEW
 https://jp.mercari.com/item/m96453609535,Tomica-Vissel-Kobe-pre-order,JP,NEW
@@ -19,25 +19,25 @@ https://jp.mercari.com/item/m38796933705,goku-rose-ssj3,JP,2ND
 https://jp.mercari.com/item/m43880377142,goku-hiệu-ứng,JP,2ND
 https://jp.mercari.com/item/m29259095070,buu-dxf,JP,2ND
 https://jp.mercari.com/item/m25234965229,set-3-keychain,NA,2ND
-https://jp.mercari.com/item/m45782078104,set-2-archives,NA,2ND
-https://jp.mercari.com/item/m80716552189,frieza-form-3-wcf,NA,NEW
+https://jp.mercari.com/item/m45782078104,set-2-archives,JP,2ND
+https://jp.mercari.com/item/m80716552189,frieza-form-3-wcf,JP,NEW
 https://jp.mercari.com/item/m39100542514,set-3-archive-new,JP,NEW
 https://jp.mercari.com/item/m45998071951,set-3-archive-santa,JP,NEW
 https://jp.mercari.com/item/m39858337565,record-of-ragnarok,JP,NEW
-https://jp.mercari.com/item/m66121643694,gohan-gotenks-hit-wcf-new,NEW,NA
+https://jp.mercari.com/item/m66121643694,gohan-gotenks-hit-wcf-new,JP,NEW
 https://jp.mercari.com/item/m56683472828,goku câu cá new,JP,NEW
-https://jp.mercari.com/item/m67977736362,set-3-hscf,NA,2ND
+https://jp.mercari.com/item/m67977736362,set-3-hscf,JP,2ND
 https://jp.mercari.com/item/m64980662923,vegeta-dwc,NA,2ND
-https://jp.mercari.com/item/m60964851052,goku-blue-wcf,NA,2ND
-https://jp.mercari.com/item/m81470099264,gohan-wcf,NA,2ND
-https://jp.mercari.com/item/m82504789778,Buu-SC-gokuSC,NA,2ND
-https://jp.mercari.com/item/m30462096444,Trunks-kefla-wcf-nobase,NA,2ND
+https://jp.mercari.com/item/m60964851052,goku-blue-wcf,JP,2ND
+https://jp.mercari.com/item/m81470099264,gohan-wcf,JP,2ND
+https://jp.mercari.com/item/m82504789778,Buu-SC-gokuSC,JP,2ND
+https://jp.mercari.com/item/m30462096444,Trunks-kefla-wcf-nobase,JP,2ND
 https://jp.mercari.com/item/m22466406730,set-3-megahouse,NA,2ND
 https://jp.mercari.com/item/m74477671191,goku-blue-MH,NA,2ND
 https://jp.mercari.com/item/m40618790679,broly-MGH,NA,2ND
-https://jp.mercari.com/item/m87537457124,goku-chichi-MGH,NA,2ND
+https://jp.mercari.com/item/m87537457124,goku-chichi-MGH,JP,2ND
 https://jp.mercari.com/item/m98379846982,broly-wcf-kid,NA,2ND
-https://jp.mercari.com/item/m93027318308,set_imagination,NA,2ND
+https://jp.mercari.com/item/m93027318308,set_imagination,JP,2ND
 https://jp.mercari.com/item/m42782025657,set_7_dydo,NA,2ND
 https://jp.mercari.com/item/m69213078652,set_7_gt,NA,2ND
 https://jp.mercari.com/item/m39797168090,Trunks-ssj-hscf,NA,2ND
