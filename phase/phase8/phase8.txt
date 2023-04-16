@@ -10,7 +10,7 @@ https://jp.mercari.com/item/m93334201843,frieza-soft-vinyl,JP,2ND
 https://jp.mercari.com/item/m27614321546,goku-blue,JP,2ND
 https://jp.mercari.com/item/m20952582706,goku-ichiban,JP,2ND
 https://jp.mercari.com/item/m32806236526,minato-ichiban,NA,2ND
-https://jp.mercari.com/item/m87374479476,naruto-hscf-01,NA,2ND
+https://jp.mercari.com/item/m87374479476,naruto-hscf-01,JP,2ND
 https://jp.mercari.com/item/m84275091320,itachi-rank-C,JP,NEW
 https://jp.mercari.com/item/m13111367239,naruto-jump,NA,NEW
 https://jp.mercari.com/item/m94729035750,hscf gotenks-broly,NA,2ND
