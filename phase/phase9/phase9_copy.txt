@@ -1,4 +1,6 @@
 https://jp.mercari.com/item/m64545669628,gokumspblue,NA,2ND
-https://jp.mercari.com/item/m32806236526,minato-ichiban,NA,2ND
-https://jp.mercari.com/item/m13111367239,naruto-jump,NA,NEW
-https://jp.mercari.com/item/m94729035750,hscf gotenks-broly,NA,2ND
+https://jp.mercari.com/item/m32806236526,minato-ichiban,JP,2ND
+https://jp.mercari.com/item/m13111367239,naruto-jump,JP,NEW
+https://jp.mercari.com/item/m94729035750,hscf gotenks-broly,JP,2ND
+https://jp.mercari.com/item/m17442800063,goku-vegeta,NA,2ND
+https://jp.mercari.com/item/m54087830015,naruto-ssk-nendroid,NA,2ND
