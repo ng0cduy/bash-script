@@ -1,6 +1,12 @@
 https://jp.mercari.com/item/m62914916048,garra dxf,NA,2ND
-https://jp.mercari.com/item/m71875955733,vegeta-wcf,NA,NEW
-https://jp.mercari.com/item/m99275263366,vegito-ichiban,NA,2ND
+https://jp.mercari.com/item/m71875955733,vegeta-wcf,JP,NEW
+https://jp.mercari.com/item/m99275263366,vegito-ichiban,JP,2ND
 https://jp.mercari.com/item/m60605427486,10-tomica,NA,2ND
 https://jp.mercari.com/item/m24960208391,set vegeta đấm cell 1,NA,2ND
 https://jp.mercari.com/item/m75258521457,chaozu-hscf,NA,2ND
+https://jp.mercari.com/item/m25400146850,Super-buu-ichiban,NA,NEW
+https://jp.mercari.com/item/m59348924644,set-9-wcf-ssj4,NA,2ND
+https://jp.mercari.com/item/m93917658303,set-2-wcf-new,NA,NEW
+https://jp.mercari.com/item/m60700555215,gotenks ssj ichiban,NA,NEW
+https://jp.mercari.com/item/m59546663095,cell-real-works,NA,2ND
+https://jp.mercari.com/item/m87275130930,cell-real-works-1,NA,2ND
