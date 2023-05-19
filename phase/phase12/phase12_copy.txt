@@ -13,7 +13,7 @@ https://jp.mercari.com/item/m87275130930,cell-real-works-1,JP,2ND
 https://jp.mercari.com/item/m25477615394,gotenks-vegito-dxhq-nobase,JP,2ND
 https://jp.mercari.com/item/m88935260507,set-4-bear-brick-flag,JP,2ND
 https://jp.mercari.com/item/m78949105445,fide-dxhq-nobase,JP,2ND
-https://jp.mercari.com/item/m71382301538,goku-tím-wcf,NA,2ND
+https://jp.mercari.com/item/m71382301538,goku-tím-wcf,JP,2ND
 https://jp.mercari.com/item/m78182322129,goku-kid-wcf,NA,NEW
 https://jp.mercari.com/item/m61622565811,goku-ssj3-xeno,NA,2ND
 https://jp.mercari.com/item/m53230199288,vegeta-ssj-god-,NA,2ND
