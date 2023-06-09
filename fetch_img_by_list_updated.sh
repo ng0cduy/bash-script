@@ -1,0 +1,154 @@
+#!/bin/bash -x
+# ./fetch_img_by_list.sh phase/phase3/phase3.txt ~/Desktop/IMG-FOLDER 2>&1 | tee log.log
+# ./fetch_img_by_list.sh phase1.txt /mnt/c/Users/bduy1/Desktop 2>&1 | tee log.log
+RED='\033[0;31m'
+NC='\033[0m' # No Color
+BLUE='\033[0;34m'         # Blue
+PURPLE='\033[0;35m'       # Purple
+CYAN='\033[0;36m'         # Cyan
+WHITE='\033[0;37m'        # White
+
+# Bold
+BBlack='\033[1;30m'       # Black
+BRed='\033[1;31m'         # Red
+BGreen='\033[1;32m'       # Green
+BYellow='\033[1;33m'      # Yellow
+BBlue='\033[1;34m'        # Blue
+BPurple='\033[1;35m'      # Purple
+BCyan='\033[1;36m'        # Cyan
+BWhite='\033[1;37m'       # White
+DEFAUL_DOWNLOAD_IMG="https://static.mercdn.net/item/detail/orig/photos"
+OS=$(uname -m)
+
+_name_="list_hang"
+CURRENT_DIR=$(pwd)
+CENTRALISE_FILE="$CURRENT_DIR/centralise_list.txt"
+input=$1
+input_base_name=$(basename "$input" .txt)
+input_dir_name=$(dirname "$input")
+destination_folder="$2/centralise_folder"
+rm -rf "$input_dir_name/$input_base_name""_copy.txt"
+rm -rf "$input_dir_name/$input_base_name""_remain.txt"
+cp "$input" "$input_dir_name/$input_base_name""_copy.txt"
+bought_list_without_link="$destination_folder/$_name_.txt"
+#create summary bought file
+rm -rf "$bought_list_without_link"
+rm -rf "$input_base_name""_remain.txt"
+touch "$bought_list_without_link"
+touch "$input_dir_name/$input_base_name""_remain.txt"
+# create images folder
+mkdir -p "$destination_folder"
+function download_url()
+{
+    local name=$1
+    local product_folder=$2
+    local id=$3
+    for i in {1..20}
+    do
+        filename="$name""_$i.jpg"
+        product_img="$product_folder/$filename"
+        download_link="$DEFAUL_DOWNLOAD_IMG/$id""_$i.jpg"
+        curl "$download_link" --output "$product_img"
+        if [ "$OS" = "x86_64" ]
+        then
+            file_size=$(du -kh "$product_img" | grep -Eo '[0-9]{1,4}' | head -1)
+        elif [ "$OS" = "arm64" ]
+        then
+            file_size=$(du -kh "$product_img" | grep -Eo '[0-9]+K' | grep -Eo '[0-9]+')
+        fi
+        if [ "$file_size" == 0 ]
+        then
+            rm -rf "$product_img"
+            break
+        fi
+    done
+}
+while IFS= read -r line
+do
+    link=$(echo "$line" | cut -d ',' -f 1)
+    name=$(echo "$line" | cut -d ',' -f 2)
+    ID=$(echo "$link" | rev | cut -d'/' -f 1 | rev)
+    state=$(echo "$line" | cut -d ',' -f 3)
+    condition=$(echo "$line" | cut -d ',' -f 4)
+    #parse bought link and remain link into a file(not available yet)
+    if [ "$state" = "JP" ] || [ "$state" = "JP-VN" ]
+    then
+        echo "$name,$condition" >> "$bought_list_without_link"
+
+    elif [ "$state" = "NA" ]
+    then
+        echo "$link,$name,$state,$condition" >> "$input_dir_name/$input_base_name""_remain.txt"
+    fi
+    # spawn folder with name
+    product_folder="$destination_folder/$name"
+    # product_folder_1="$destination_folder/[VN]_$name""_[$condition]"
+: << 'COMMENT'
+    check if secret file already exsist or not by checking name and ID, if not
+    create the secret file and curl img
+    spawn a secret file into link, pass name and ID into link
+    else do nothing
+    Check if ID is in the centralise list or not, if not, add to the centralise list
+COMMENT
+    if grep -q "$ID" "$CENTRALISE_FILE"
+    then
+        echo "exist, not add"
+    else
+        echo "$link,$name,$condition" >> "$CENTRALISE_FILE"
+    fi
+    if [ -d "$product_folder" ]
+    then
+        secret_ID=$(cat "$product_folder/secret_link")
+        chmod 444 "$product_folder/secret_link"
+        if [ "$secret_ID" = "$ID" ]
+        then
+            echo -e "${RED}Folder ${product_folder} Already exist ${NC}"
+        fi
+    # elif [ -d "$product_folder_1" ]
+    # then
+    #     secret_ID=$(cat "$product_folder_1/secret_link")
+    #     chmod 444 "$product_folder_1/secret_link"
+    #     if [ "$secret_ID" = "$ID" ]
+    #     then
+    #         echo -e "${CYAN}Folder ${product_folder_1} Already exist and already changed the name ${NC}"
+    #     fi
+    else
+        mkdir "$product_folder"
+        touch "$product_folder/secret_link"
+        echo "$ID" >> "$product_folder/secret_link"
+        chmod 444 "$product_folder/secret_link"
+        download_url "$name" "$product_folder" "$id"
+    fi
+done < "$input"
+
+# while IFS= read -r line
+# do
+#     bought_name=$(echo "$line" | cut -d ',' -f 1)
+#     bought_state=$(echo "$line" | cut -d ',' -f 2)
+#     file=$(ls "$destination_folder" | grep "$bought_name")
+#     file1="[VN]_$bought_name""_[$bought_state]"
+
+#     if [ -z "$file" ]
+#     then
+#         echo -e "${RED}Folder ${destination_folder}/${bought_name} not found or not a folder ${NC}"
+#     elif [ "$file" = "$file1" ]
+#     then
+#         echo -e "${CYAN}Folder ${destination_folder}/${file1} already changed the name and state${NC}"
+#     else
+#         mv "$destination_folder/$bought_name" "$destination_folder/[VN]_$bought_name""_[$bought_state]"
+#     fi
+# done < "$bought_list_without_link"
+
+# total_product_list=$(cat "$bought_list_without_link"| sed '/^\s*$/d'| wc -l)
+# echo "---------------------------------------------" >> "$bought_list_without_link"
+# echo "Tổng đơn: $total_product_list" >> "$bought_list_without_link"
+# echo "---------------------------------------------" >> "$bought_list_without_link"
+
+# push_git(){
+#     date=$(date '+%Y%m%d%H%M%S')
+#     git status
+#     git add .
+#     git add fetch_img_by_list.sh
+#     git commit -m "update files to $date"
+#     git push
+# }
+# add these line to bashrc in wsl
