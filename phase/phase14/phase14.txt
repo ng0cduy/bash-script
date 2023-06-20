@@ -8,3 +8,4 @@ https://jp.mercari.com/item/m76384412210,set-8-wcf,JP,2ND
 https://jp.mercari.com/item/m48160834338,pic-dxf-2,JP,2ND
 https://jp.mercari.com/item/m36473314868,set-3-wcf,JP,2ND
 https://jp.mercari.com/item/m17190713609,set-4-wcf-naruto,NA,NEW
+https://jp.mercari.com/item/m60415317897,buu-hscf,NA,2ND
