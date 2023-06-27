@@ -1,6 +1,7 @@
 #!/bin/bash -x
 # ./fetch_img_by_list.sh phase/phase3/phase3.txt ~/Desktop/IMG-FOLDER 2>&1 | tee log.log
 # ./fetch_img_by_list.sh phase1.txt /mnt/c/Users/bduy1/Desktop 2>&1 | tee log.log
+# https://paypayfleamarket.yahoo.co.jp/item/z225582006
 RED='\033[0;31m'
 NC='\033[0m' # No Color
 BLUE='\033[0;34m'         # Blue
@@ -40,6 +41,7 @@ mkdir -p "$destination_folder"
 while IFS= read -r line
 do
     link=$(echo "$line" | cut -d ',' -f 1)
+    mer_or_flea=$(echo "$link" | grep "paypayfleamarket")
     name=$(echo "$line" | cut -d ',' -f 2)
     ID=$(echo "$link" | rev | cut -d'/' -f 1 | rev)
     state=$(echo "$line" | cut -d ',' -f 3)
