@@ -83,25 +83,44 @@ do
         touch "$product_folder/secret_link"
         echo "$ID" >> "$product_folder/secret_link"
         chmod 444 "$product_folder/secret_link"
-        for i in {1..20}
-        do
-            filename="$name""_$i.jpg"
-            product_img="$product_folder/$filename"
-            download_link="$DEFAUL_DOWNLOAD_IMG/$ID""_$i.jpg"
-            curl "$download_link" --output "$product_img"
-            if [ "$OS" = "x86_64" ]
-            then
-                file_size=$(du -kh "$product_img" | grep -Eo '[0-9]{1,4}' | head -1)
-            elif [ "$OS" = "arm64" ]
-            then
-                file_size=$(du -kh "$product_img" | grep -Eo '[0-9]+K' | grep -Eo '[0-9]+')
-            fi
-            if [ "$file_size" == 0 ]
-            then
-                rm -rf "$product_img"
-                break
-            fi
-        done
+        if [[ "$link" == *"mercari"* ]];
+        then
+            for i in {1..20}
+            do
+                filename="$name""_$i.jpg"
+                product_img="$product_folder/$filename"
+                download_link="$DEFAUL_DOWNLOAD_IMG/$ID""_$i.jpg"
+                curl "$download_link" --output "$product_img"
+                if [ "$OS" = "x86_64" ]
+                then
+                    file_size=$(du -kh "$product_img" | grep -Eo '[0-9]{1,4}' | head -1)
+                elif [ "$OS" = "arm64" ]
+                then
+                    file_size=$(du -kh "$product_img" | grep -Eo '[0-9]+K' | grep -Eo '[0-9]+')
+                fi
+                if [ "$file_size" == 0 ]
+                then
+                    rm -rf "$product_img"
+                    break
+                fi
+            done
+        else
+            rm -f "temp.txt"
+            rm -f "a.html"
+            curl -s --output "a.html" "$link"
+            links=$(cat "a.html" | grep -Eo "https://auctions.c.yimg.jp/images.auctions.yahoo.co.jp/image/dr000/auc[0-9]{4}/users/[A-Za-z0-9]*/i-img[A-Za-z0-9-]*.jpg"| sort -u)
+            echo "$links" > temp.txt
+            i=1
+            while IFS= read -r line
+            do
+                filename="$name""_$i.jpg"
+                product_img="$product_folder/$filename"
+                curl "$line" --output "$product_img"
+                i=$((i+1))
+            done < "temp.txt"
+            rm -f "temp.txt"
+            rm -f "a.html"
+        fi
     fi
 done < "$input"
 
