@@ -1,0 +1,24 @@
+goten_MGH_no_effect,NEW
+set_3_wcf_new,NEW
+vegeta_cooking,NEW
+goku_xeno_wcf,2ND
+vegeta_yura_yura,NEW
+2_wcf_2nd,2ND
+nappa_hscf,2ND
+set hscf_naruto,2ND
+goku_ssj3_tien_hscf,2ND
+vegeta_match_makers,2ND
+set_7_wcf_2nd,2ND
+set_3_archive,NEW
+set_3_hscf,2ND
+set_5_wcf_2nd,2ND
+goku_msp_x2,2ND
+GX_material_x2,NEW
+set_wcf_5_new_1_2nd,MIXED
+combo_3_wcf_nobase,2ND
+vegeta_dxf_nobase,2ND
+cell_hscf,2ND
+set_fig_hiệu_ứng_2nd,2ND
+---------------------------------------------
+Tổng đơn: 21
+---------------------------------------------

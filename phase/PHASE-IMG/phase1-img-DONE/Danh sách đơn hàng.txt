@@ -1,0 +1,25 @@
+Broly_mega_wcf,NEW
+Champa_dxf,2ND
+Gohan_di_hoc_wcf,NEW
+set_7_wcf_2nd,2ND
+set_goku_khop,2ND
+set_3_wcf_extra_costume_new,NEW
+set_3_wcf_gt_new,NEW
+set_4_SDBH_vol7,UNKNOWN
+Gogeta_LO,NEW
+set_wcf_2nd_nobase,2ND
+set_wcf_8_2nd_nobox,2ND
+goku_yadart_vegeta_majin,NEW
+fate_lakshmi_bai,2ND
+wcf_broly,2ND
+goku_grand_ssj,2ND
+anti_saber_new,NEW
+set_2_ishtar_mashu,MIXED
+set_wcf_baseball_hg,2ND
+set_3_DXHQ,2ND
+set_2_wcf_new,NEW
+shenron_mega_wcf,2ND
+goku_grand,2ND
+---------------------------------------------
+Tổng đơn: 22
+---------------------------------------------

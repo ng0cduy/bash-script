@@ -1,0 +1,9 @@
+jeep-pre-order,NEW
+set-doraemon,2ND
+trunks hscf,2ND
+ku-ve-nappa-hscf,2ND
+set-nar-hscf,2ND
+naruto-panel,2ND
+---------------------------------------------
+Tổng đơn: 6
+---------------------------------------------

@@ -1,0 +1,27 @@
+vegeta_nau_an,UNKNOWN
+Sei_Shonagon,NEW
+set_máy_dò_ngọ_mây_cell,NEW
+thuyền_fide,NEW
+set_máy_dò_ngọc_mây_cell_2,NEW
+set_gotenks_xeno,2ND
+vegeta_kid wcf,NEW
+cell_ấu_trùng,NEW
+musashi,2ND
+musashi_box,2ND
+set_3_fate_new,NEW
+musashi_new,NEW
+set_3_wcf_2nd,2ND
+bulma_wcf_new,NEW
+set_goten_trunks_sleep,2ND
+set_vegeta_linh_tinh,2ND
+set_hscf,2ND
+naruto_hscf_04,2ND
+tomica_land_cruiser_1,NEW
+tomica_land_cruiser_2,NEW
+anti_saber_new,NEW
+set_4_wcf_2nd,2ND
+Gohan_Grand,2ND
+set_2_ishtar_mashu,MIXED
+---------------------------------------------
+Tổng đơn: 24
+---------------------------------------------
