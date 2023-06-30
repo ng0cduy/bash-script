@@ -5,7 +5,11 @@ waver-ichiban,2ND
 ssk-hscf-10,2ND
 4-wcf-nar-new,NEW
 goku-GROS-gohan-msp,2ND
+goku-FES,2ND
+set-5-wcf-naruto,NEW
 android-17-hscf,NEW
+uub-shenron-wcf-new,NEW
+set_17_tmc,NEW
 ---------------------------------------------
-Tổng đơn: 8
+Tổng đơn:       12
 ---------------------------------------------
