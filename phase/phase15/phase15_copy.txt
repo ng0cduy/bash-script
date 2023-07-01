@@ -10,11 +10,11 @@ https://jp.mercari.com/item/m72183176344,goku-GROS-gohan-msp,JP,2ND
 https://jp.mercari.com/item/m13546254737,goku-FES,JP,2ND
 https://jp.mercari.com/item/m24713837269,set-5-wcf-naruto,JP,NEW
 https://paypayfleamarket.yahoo.co.jp/item/z196425454,android-17-hscf,JP,NEW
-https://paypayfleamarket.yahoo.co.jp/item/z225177162,vegeta-ssj-dxf,NA,2ND
+https://paypayfleamarket.yahoo.co.jp/item/z225177162,vegeta-ssj-dxf,JP,2ND
 https://jp.mercari.com/item/m48908753399,uub-shenron-wcf-new,JP,NEW
 https://jp.mercari.com/item/m41700805588,set_17_tmc,JP,NEW
-https://jp.mercari.com/item/m37771160356,set_2_tmc_limited,NA,NEW
+https://jp.mercari.com/item/m37771160356,set_2_tmc_limited,JP,NEW
 https://jp.mercari.com/item/m10040630985,set_15_tmc,NA,NEW
-https://jp.mercari.com/item/m76500890644,set_9_tmc,NA,NEW
-https://jp.mercari.com/item/m13090206644,set_4_tmc_limited,NA,NEW
+https://jp.mercari.com/item/m76500890644,set_9_tmc,JP,NEW
+https://jp.mercari.com/item/m13090206644,set_4_tmc_limited,JP,NEW
 
