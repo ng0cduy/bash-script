@@ -18,3 +18,4 @@ https://jp.mercari.com/item/m10040630985,set_15_tmc,NA,NEW
 https://jp.mercari.com/item/m76500890644,set_9_tmc,JP,NEW
 https://jp.mercari.com/item/m13090206644,set_4_tmc_limited,JP,NEW
 https://jp.mercari.com/item/m22091688423,fide_form_1,NA,2ND
+https://jp.mercari.com/item/m32090394444,set_12_wcf,NA,2ND
