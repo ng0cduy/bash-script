@@ -12,8 +12,9 @@ vegeta-ssj-dxf,2ND
 uub-shenron-wcf-new,NEW
 set_17_tmc,NEW
 set_2_tmc_limited,NEW
+set_15_tmc,NEW
 set_9_tmc,NEW
 set_4_tmc_limited,NEW
 ---------------------------------------------
-Tổng đơn: 16
+Tổng đơn: 17
 ---------------------------------------------
