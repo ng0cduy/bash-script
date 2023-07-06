@@ -2,22 +2,22 @@
 # ./fetch_img_by_list.sh phase/phase3/phase3.txt ~/Desktop/IMG-FOLDER 2>&1 | tee log.log
 # ./fetch_img_by_list.sh phase1.txt /mnt/c/Users/bduy1/Desktop 2>&1 | tee log.log
 # https://paypayfleamarket.yahoo.co.jp/item/z225582006
-RED='\033[0;31m'
-NC='\033[0m' # No Color
-BLUE='\033[0;34m'         # Blue
-PURPLE='\033[0;35m'       # Purple
-CYAN='\033[0;36m'         # Cyan
-WHITE='\033[0;37m'        # White
+export RED='\033[0;31m'
+export NC='\033[0m' # No Color
+export BLUE='\033[0;34m'         # Blue
+export PURPLE='\033[0;35m'       # Purple
+export CYAN='\033[0;36m'         # Cyan
+export WHITE='\033[0;37m'        # White
 
 # Bold
-BBlack='\033[1;30m'       # Black
-BRed='\033[1;31m'         # Red
-BGreen='\033[1;32m'       # Green
-BYellow='\033[1;33m'      # Yellow
-BBlue='\033[1;34m'        # Blue
-BPurple='\033[1;35m'      # Purple
-BCyan='\033[1;36m'        # Cyan
-BWhite='\033[1;37m'       # White
+export BBlack='\033[1;30m'       # Black
+export BRed='\033[1;31m'         # Red
+export BGreen='\033[1;32m'       # Green
+export BYellow='\033[1;33m'      # Yellow
+export BBlue='\033[1;34m'        # Blue
+export BPurple='\033[1;35m'      # Purple
+export BCyan='\033[1;36m'        # Cyan
+export BWhite='\033[1;37m'       # White
 DEFAUL_DOWNLOAD_IMG="https://static.mercdn.net/item/detail/orig/photos"
 OS=$(uname -m)
 
@@ -41,7 +41,6 @@ mkdir -p "$destination_folder"
 while IFS= read -r line
 do
     link=$(echo "$line" | cut -d ',' -f 1)
-    mer_or_flea=$(echo "$link" | grep "paypayfleamarket")
     name=$(echo "$line" | cut -d ',' -f 2)
     ID=$(echo "$link" | rev | cut -d'/' -f 1 | rev)
     state=$(echo "$line" | cut -d ',' -f 3)
@@ -143,9 +142,11 @@ do
 done < "$bought_list_without_link"
 
 total_product_list=$(cat "$bought_list_without_link"| sed '/^\s*$/d'| wc -l)
-echo "---------------------------------------------" >> "$bought_list_without_link"
-echo "Tổng đơn: $total_product_list" >> "$bought_list_without_link"
-echo "---------------------------------------------" >> "$bought_list_without_link"
+{
+    echo "---------------------------------------------"
+    echo "Tổng đơn: $total_product_list"
+    echo "---------------------------------------------"
+} >> "$bought_list_without_link"
 
 # push_git(){
 #     date=$(date '+%Y%m%d%H%M%S')
