@@ -3,13 +3,13 @@
 # A script to output a brief summary of system information
 
 freespace=$(df -h / | awk 'NR==2 {print $4}')
-freemem=$(free -h | awk 'NR==2 {print $4}')
+# freemem=$(free -h | awk 'NR==2 {print $4}')
+freemem=$(top -l 1 -s 0 | grep PhysMem | cut -d ',' -f3 | awk '{print $1;}')
 
 greentext="\033[32m"
 bold="\033[1m"
 normal="\033[0m"
-
-printf -v logdate "%(%Y-%m-%d)T"
+logdate=$(date '+%Y-%m-%d')
 
 echo -e $bold"Quick system report for "$greentext"$HOSTNAME"$normal
 printf "\tKernel Release:\t%s\n" $(uname -r)
