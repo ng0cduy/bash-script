@@ -147,13 +147,3 @@ total_product_list=$(cat "$bought_list_without_link"| sed '/^\s*$/d'| wc -l)
     echo "Tổng đơn: $total_product_list"
     echo "---------------------------------------------"
 } >> "$bought_list_without_link"
-
-# push_git(){
-#     date=$(date '+%Y%m%d%H%M%S')
-#     git status
-#     git add .
-#     git add fetch_img_by_list.sh
-#     git commit -m "update files to $date"
-#     git push
-# }
-# add these line to bashrc in wsl
