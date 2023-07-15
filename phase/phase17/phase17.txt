@@ -5,7 +5,7 @@ https://jp.mercari.com/item/m68757985282,limitedNissan0110,NA,NEW
 https://jp.mercari.com/item/m52077472515,limitedNissan0099,NA,NEW
 https://jp.mercari.com/item/m36229087059,limitedBentley0144,NA,NEW
 https://jp.mercari.com/item/m15077036756,ssk,NA,NEW
-https://jp.mercari.com/item/m15077036756,KKS,NA,NEW
+https://jp.mercari.com/item/m77357552294,kks,NA,NEW
 https://jp.mercari.com/item/m85505145374,NRT,NA,NEW
 https://jp.mercari.com/item/m18871387456,ITC,NA,NEW
 https://jp.mercari.com/item/m84503119156,SKR,NA,NEW
