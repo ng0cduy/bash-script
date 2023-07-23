@@ -1,11 +1,3 @@
 https://jp.mercari.com/item/m34178563850,goku_angel,NA,2ND
-https://jp.mercari.com/item/m26189632884,oolong,NA,2ND
-https://jp.mercari.com/item/m15368201146,goku_dxf_hscf,NA,2ND
-https://jp.mercari.com/item/m68757985282,limitedNissan0110,NA,NEW
-https://jp.mercari.com/item/m52077472515,limitedNissan0099,NA,NEW
-https://jp.mercari.com/item/m36229087059,limitedBentley0144,NA,NEW
-https://jp.mercari.com/item/m15077036756,ssk,NA,NEW
-https://jp.mercari.com/item/m77357552294,kks,NA,NEW
-https://jp.mercari.com/item/m85505145374,NRT,NA,NEW
-https://jp.mercari.com/item/m18871387456,ITC,NA,NEW
-https://jp.mercari.com/item/m84503119156,SKR,NA,NEW
+https://jp.mercari.com/item/m43986392275,mini_cooper,NA,NEW
+https://jp.mercari.com/item/m82320297538,set_2_TMC_limited,NA,NEW
