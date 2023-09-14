@@ -1,0 +1,587 @@
++ set -e
++ start=https://s1.cdn.autoevolution.com/images/news/gallery/
++ mid=inside-the-2023-hot-wheels-case-f-here-is-the-sixth-super-treasure-hunt-of-the-year_
++ end=.jpg
++ file_prefix=f_case1
++ folder_storage=f_case1
+++ uname -m
++ OS=x86_64
++ rm -rf f_case1
+++ pwd
++ cur_pwd=/mnt/d/project/bash-script
++ mkdir /mnt/d/project/bash-script/f_case1
++ for i in {1..100}
++ filename_url=https://s1.cdn.autoevolution.com/images/news/gallery/inside-the-2023-hot-wheels-case-f-here-is-the-sixth-super-treasure-hunt-of-the-year_1.jpg
++ output_filename=/mnt/d/project/bash-script/f_case1/f_case1_1.jpg
++ curl https://s1.cdn.autoevolution.com/images/news/gallery/inside-the-2023-hot-wheels-case-f-here-is-the-sixth-super-treasure-hunt-of-the-year_1.jpg --output /mnt/d/project/bash-script/f_case1/f_case1_1.jpg
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  145k  100  145k    0     0   625k      0 --:--:-- --:--:-- --:--:--  625k
++ '[' x86_64 = x86_64 ']'
+++ du -kh /mnt/d/project/bash-script/f_case1/f_case1_1.jpg
+++ grep -Eo '[0-9]{1,4}'
+++ head -1
++ file_size=148
++ '[' 148 == 0 ']'
++ cat /mnt/d/project/bash-script/f_case1/f_case1_1.jpg
++ grep '404 Not Found'
++ for i in {1..100}
++ filename_url=https://s1.cdn.autoevolution.com/images/news/gallery/inside-the-2023-hot-wheels-case-f-here-is-the-sixth-super-treasure-hunt-of-the-year_2.jpg
++ output_filename=/mnt/d/project/bash-script/f_case1/f_case1_2.jpg
++ curl https://s1.cdn.autoevolution.com/images/news/gallery/inside-the-2023-hot-wheels-case-f-here-is-the-sixth-super-treasure-hunt-of-the-year_2.jpg --output /mnt/d/project/bash-script/f_case1/f_case1_2.jpg
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  186k  100  186k    0     0   779k      0 --:--:-- --:--:-- --:--:--  782k
++ '[' x86_64 = x86_64 ']'
+++ grep -Eo '[0-9]{1,4}'
+++ head -1
+++ du -kh /mnt/d/project/bash-script/f_case1/f_case1_2.jpg
++ file_size=188
++ '[' 188 == 0 ']'
++ cat /mnt/d/project/bash-script/f_case1/f_case1_2.jpg
++ grep '404 Not Found'
++ for i in {1..100}
++ filename_url=https://s1.cdn.autoevolution.com/images/news/gallery/inside-the-2023-hot-wheels-case-f-here-is-the-sixth-super-treasure-hunt-of-the-year_3.jpg
++ output_filename=/mnt/d/project/bash-script/f_case1/f_case1_3.jpg
++ curl https://s1.cdn.autoevolution.com/images/news/gallery/inside-the-2023-hot-wheels-case-f-here-is-the-sixth-super-treasure-hunt-of-the-year_3.jpg --output /mnt/d/project/bash-script/f_case1/f_case1_3.jpg
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  125k  100  125k    0     0   562k      0 --:--:-- --:--:-- --:--:--  562k
++ '[' x86_64 = x86_64 ']'
+++ grep -Eo '[0-9]{1,4}'
+++ head -1
+++ du -kh /mnt/d/project/bash-script/f_case1/f_case1_3.jpg
++ file_size=128
++ '[' 128 == 0 ']'
++ cat /mnt/d/project/bash-script/f_case1/f_case1_3.jpg
++ grep '404 Not Found'
++ for i in {1..100}
++ filename_url=https://s1.cdn.autoevolution.com/images/news/gallery/inside-the-2023-hot-wheels-case-f-here-is-the-sixth-super-treasure-hunt-of-the-year_4.jpg
++ output_filename=/mnt/d/project/bash-script/f_case1/f_case1_4.jpg
++ curl https://s1.cdn.autoevolution.com/images/news/gallery/inside-the-2023-hot-wheels-case-f-here-is-the-sixth-super-treasure-hunt-of-the-year_4.jpg --output /mnt/d/project/bash-script/f_case1/f_case1_4.jpg
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  136k  100  136k    0     0   225k      0 --:--:-- --:--:-- --:--:--  225k
++ '[' x86_64 = x86_64 ']'
+++ du -kh /mnt/d/project/bash-script/f_case1/f_case1_4.jpg
+++ grep -Eo '[0-9]{1,4}'
+++ head -1
++ file_size=140
++ '[' 140 == 0 ']'
++ cat /mnt/d/project/bash-script/f_case1/f_case1_4.jpg
++ grep '404 Not Found'
++ for i in {1..100}
++ filename_url=https://s1.cdn.autoevolution.com/images/news/gallery/inside-the-2023-hot-wheels-case-f-here-is-the-sixth-super-treasure-hunt-of-the-year_5.jpg
++ output_filename=/mnt/d/project/bash-script/f_case1/f_case1_5.jpg
++ curl https://s1.cdn.autoevolution.com/images/news/gallery/inside-the-2023-hot-wheels-case-f-here-is-the-sixth-super-treasure-hunt-of-the-year_5.jpg --output /mnt/d/project/bash-script/f_case1/f_case1_5.jpg
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  136k  100  136k    0     0   298k      0 --:--:-- --:--:-- --:--:--  298k
++ '[' x86_64 = x86_64 ']'
+++ du -kh /mnt/d/project/bash-script/f_case1/f_case1_5.jpg
+++ grep -Eo '[0-9]{1,4}'
+++ head -1
++ file_size=140
++ '[' 140 == 0 ']'
++ cat /mnt/d/project/bash-script/f_case1/f_case1_5.jpg
++ grep '404 Not Found'
++ for i in {1..100}
++ filename_url=https://s1.cdn.autoevolution.com/images/news/gallery/inside-the-2023-hot-wheels-case-f-here-is-the-sixth-super-treasure-hunt-of-the-year_6.jpg
++ output_filename=/mnt/d/project/bash-script/f_case1/f_case1_6.jpg
++ curl https://s1.cdn.autoevolution.com/images/news/gallery/inside-the-2023-hot-wheels-case-f-here-is-the-sixth-super-treasure-hunt-of-the-year_6.jpg --output /mnt/d/project/bash-script/f_case1/f_case1_6.jpg
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  141k  100  141k    0     0   304k      0 --:--:-- --:--:-- --:--:--  304k
++ '[' x86_64 = x86_64 ']'
+++ du -kh /mnt/d/project/bash-script/f_case1/f_case1_6.jpg
+++ grep -Eo '[0-9]{1,4}'
+++ head -1
++ file_size=144
++ '[' 144 == 0 ']'
++ cat /mnt/d/project/bash-script/f_case1/f_case1_6.jpg
++ grep '404 Not Found'
++ for i in {1..100}
++ filename_url=https://s1.cdn.autoevolution.com/images/news/gallery/inside-the-2023-hot-wheels-case-f-here-is-the-sixth-super-treasure-hunt-of-the-year_7.jpg
++ output_filename=/mnt/d/project/bash-script/f_case1/f_case1_7.jpg
++ curl https://s1.cdn.autoevolution.com/images/news/gallery/inside-the-2023-hot-wheels-case-f-here-is-the-sixth-super-treasure-hunt-of-the-year_7.jpg --output /mnt/d/project/bash-script/f_case1/f_case1_7.jpg
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 22  127k   22 29617    0     0  69851      0  0:00:01 --:--:--  0:00:01 69687100  127k  100  127k    0     0   259k      0 --:--:-- --:--:-- --:--:--  259k
++ '[' x86_64 = x86_64 ']'
+++ du -kh /mnt/d/project/bash-script/f_case1/f_case1_7.jpg
+++ grep -Eo '[0-9]{1,4}'
+++ head -1
++ file_size=128
++ '[' 128 == 0 ']'
++ cat /mnt/d/project/bash-script/f_case1/f_case1_7.jpg
++ grep '404 Not Found'
++ for i in {1..100}
++ filename_url=https://s1.cdn.autoevolution.com/images/news/gallery/inside-the-2023-hot-wheels-case-f-here-is-the-sixth-super-treasure-hunt-of-the-year_8.jpg
++ output_filename=/mnt/d/project/bash-script/f_case1/f_case1_8.jpg
++ curl https://s1.cdn.autoevolution.com/images/news/gallery/inside-the-2023-hot-wheels-case-f-here-is-the-sixth-super-treasure-hunt-of-the-year_8.jpg --output /mnt/d/project/bash-script/f_case1/f_case1_8.jpg
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 17  164k   17 29617    0     0  27679      0  0:00:06  0:00:01  0:00:05 27679100  164k  100  164k    0     0   121k      0  0:00:01  0:00:01 --:--:--  121k
++ '[' x86_64 = x86_64 ']'
+++ du -kh /mnt/d/project/bash-script/f_case1/f_case1_8.jpg
+++ grep -Eo '[0-9]{1,4}'
+++ head -1
++ file_size=168
++ '[' 168 == 0 ']'
++ cat /mnt/d/project/bash-script/f_case1/f_case1_8.jpg
++ grep '404 Not Found'
++ for i in {1..100}
++ filename_url=https://s1.cdn.autoevolution.com/images/news/gallery/inside-the-2023-hot-wheels-case-f-here-is-the-sixth-super-treasure-hunt-of-the-year_9.jpg
++ output_filename=/mnt/d/project/bash-script/f_case1/f_case1_9.jpg
++ curl https://s1.cdn.autoevolution.com/images/news/gallery/inside-the-2023-hot-wheels-case-f-here-is-the-sixth-super-treasure-hunt-of-the-year_9.jpg --output /mnt/d/project/bash-script/f_case1/f_case1_9.jpg
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 29  158k   29 47377    0     0   121k      0  0:00:01 --:--:--  0:00:01  121k100  158k  100  158k    0     0   350k      0 --:--:-- --:--:-- --:--:--  350k
++ '[' x86_64 = x86_64 ']'
+++ du -kh /mnt/d/project/bash-script/f_case1/f_case1_9.jpg
+++ grep -Eo '[0-9]{1,4}'
+++ head -1
++ file_size=160
++ '[' 160 == 0 ']'
++ cat /mnt/d/project/bash-script/f_case1/f_case1_9.jpg
++ grep '404 Not Found'
++ for i in {1..100}
++ filename_url=https://s1.cdn.autoevolution.com/images/news/gallery/inside-the-2023-hot-wheels-case-f-here-is-the-sixth-super-treasure-hunt-of-the-year_10.jpg
++ output_filename=/mnt/d/project/bash-script/f_case1/f_case1_10.jpg
++ curl https://s1.cdn.autoevolution.com/images/news/gallery/inside-the-2023-hot-wheels-case-f-here-is-the-sixth-super-treasure-hunt-of-the-year_10.jpg --output /mnt/d/project/bash-script/f_case1/f_case1_10.jpg
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  150k  100  150k    0     0   659k      0 --:--:-- --:--:-- --:--:--  659k
++ '[' x86_64 = x86_64 ']'
+++ du -kh /mnt/d/project/bash-script/f_case1/f_case1_10.jpg
+++ grep -Eo '[0-9]{1,4}'
+++ head -1
++ file_size=152
++ '[' 152 == 0 ']'
++ cat /mnt/d/project/bash-script/f_case1/f_case1_10.jpg
++ grep '404 Not Found'
++ for i in {1..100}
++ filename_url=https://s1.cdn.autoevolution.com/images/news/gallery/inside-the-2023-hot-wheels-case-f-here-is-the-sixth-super-treasure-hunt-of-the-year_11.jpg
++ output_filename=/mnt/d/project/bash-script/f_case1/f_case1_11.jpg
++ curl https://s1.cdn.autoevolution.com/images/news/gallery/inside-the-2023-hot-wheels-case-f-here-is-the-sixth-super-treasure-hunt-of-the-year_11.jpg --output /mnt/d/project/bash-script/f_case1/f_case1_11.jpg
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  144k  100  144k    0     0   642k      0 --:--:-- --:--:-- --:--:--  642k
++ '[' x86_64 = x86_64 ']'
+++ du -kh /mnt/d/project/bash-script/f_case1/f_case1_11.jpg
+++ grep -Eo '[0-9]{1,4}'
+++ head -1
++ file_size=148
++ '[' 148 == 0 ']'
++ cat /mnt/d/project/bash-script/f_case1/f_case1_11.jpg
++ grep '404 Not Found'
++ for i in {1..100}
++ filename_url=https://s1.cdn.autoevolution.com/images/news/gallery/inside-the-2023-hot-wheels-case-f-here-is-the-sixth-super-treasure-hunt-of-the-year_12.jpg
++ output_filename=/mnt/d/project/bash-script/f_case1/f_case1_12.jpg
++ curl https://s1.cdn.autoevolution.com/images/news/gallery/inside-the-2023-hot-wheels-case-f-here-is-the-sixth-super-treasure-hunt-of-the-year_12.jpg --output /mnt/d/project/bash-script/f_case1/f_case1_12.jpg
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 38  121k   38 47385    0     0   110k      0  0:00:01 --:--:--  0:00:01  110k100  121k  100  121k    0     0   257k      0 --:--:-- --:--:-- --:--:--  256k
++ '[' x86_64 = x86_64 ']'
+++ du -kh /mnt/d/project/bash-script/f_case1/f_case1_12.jpg
+++ grep -Eo '[0-9]{1,4}'
+++ head -1
++ file_size=124
++ '[' 124 == 0 ']'
++ cat /mnt/d/project/bash-script/f_case1/f_case1_12.jpg
++ grep '404 Not Found'
++ for i in {1..100}
++ filename_url=https://s1.cdn.autoevolution.com/images/news/gallery/inside-the-2023-hot-wheels-case-f-here-is-the-sixth-super-treasure-hunt-of-the-year_13.jpg
++ output_filename=/mnt/d/project/bash-script/f_case1/f_case1_13.jpg
++ curl https://s1.cdn.autoevolution.com/images/news/gallery/inside-the-2023-hot-wheels-case-f-here-is-the-sixth-super-treasure-hunt-of-the-year_13.jpg --output /mnt/d/project/bash-script/f_case1/f_case1_13.jpg
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  125k  100  125k    0     0   583k      0 --:--:-- --:--:-- --:--:--  583k
++ '[' x86_64 = x86_64 ']'
+++ du -kh /mnt/d/project/bash-script/f_case1/f_case1_13.jpg
+++ grep -Eo '[0-9]{1,4}'
+++ head -1
++ file_size=128
++ '[' 128 == 0 ']'
++ cat /mnt/d/project/bash-script/f_case1/f_case1_13.jpg
++ grep '404 Not Found'
++ for i in {1..100}
++ filename_url=https://s1.cdn.autoevolution.com/images/news/gallery/inside-the-2023-hot-wheels-case-f-here-is-the-sixth-super-treasure-hunt-of-the-year_14.jpg
++ output_filename=/mnt/d/project/bash-script/f_case1/f_case1_14.jpg
++ curl https://s1.cdn.autoevolution.com/images/news/gallery/inside-the-2023-hot-wheels-case-f-here-is-the-sixth-super-treasure-hunt-of-the-year_14.jpg --output /mnt/d/project/bash-script/f_case1/f_case1_14.jpg
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  127k  100  127k    0     0   278k      0 --:--:-- --:--:-- --:--:--  278k
++ '[' x86_64 = x86_64 ']'
+++ du -kh /mnt/d/project/bash-script/f_case1/f_case1_14.jpg
+++ grep -Eo '[0-9]{1,4}'
+++ head -1
++ file_size=128
++ '[' 128 == 0 ']'
++ cat /mnt/d/project/bash-script/f_case1/f_case1_14.jpg
++ grep '404 Not Found'
++ for i in {1..100}
++ filename_url=https://s1.cdn.autoevolution.com/images/news/gallery/inside-the-2023-hot-wheels-case-f-here-is-the-sixth-super-treasure-hunt-of-the-year_15.jpg
++ output_filename=/mnt/d/project/bash-script/f_case1/f_case1_15.jpg
++ curl https://s1.cdn.autoevolution.com/images/news/gallery/inside-the-2023-hot-wheels-case-f-here-is-the-sixth-super-treasure-hunt-of-the-year_15.jpg --output /mnt/d/project/bash-script/f_case1/f_case1_15.jpg
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  159k  100  159k    0     0   346k      0 --:--:-- --:--:-- --:--:--  345k
++ '[' x86_64 = x86_64 ']'
+++ grep -Eo '[0-9]{1,4}'
+++ du -kh /mnt/d/project/bash-script/f_case1/f_case1_15.jpg
+++ head -1
++ file_size=160
++ '[' 160 == 0 ']'
++ cat /mnt/d/project/bash-script/f_case1/f_case1_15.jpg
++ grep '404 Not Found'
++ for i in {1..100}
++ filename_url=https://s1.cdn.autoevolution.com/images/news/gallery/inside-the-2023-hot-wheels-case-f-here-is-the-sixth-super-treasure-hunt-of-the-year_16.jpg
++ output_filename=/mnt/d/project/bash-script/f_case1/f_case1_16.jpg
++ curl https://s1.cdn.autoevolution.com/images/news/gallery/inside-the-2023-hot-wheels-case-f-here-is-the-sixth-super-treasure-hunt-of-the-year_16.jpg --output /mnt/d/project/bash-script/f_case1/f_case1_16.jpg
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  139k  100  139k    0     0   629k      0 --:--:-- --:--:-- --:--:--  629k
++ '[' x86_64 = x86_64 ']'
+++ du -kh /mnt/d/project/bash-script/f_case1/f_case1_16.jpg
+++ grep -Eo '[0-9]{1,4}'
+++ head -1
++ file_size=140
++ '[' 140 == 0 ']'
++ cat /mnt/d/project/bash-script/f_case1/f_case1_16.jpg
++ grep '404 Not Found'
++ for i in {1..100}
++ filename_url=https://s1.cdn.autoevolution.com/images/news/gallery/inside-the-2023-hot-wheels-case-f-here-is-the-sixth-super-treasure-hunt-of-the-year_17.jpg
++ output_filename=/mnt/d/project/bash-script/f_case1/f_case1_17.jpg
++ curl https://s1.cdn.autoevolution.com/images/news/gallery/inside-the-2023-hot-wheels-case-f-here-is-the-sixth-super-treasure-hunt-of-the-year_17.jpg --output /mnt/d/project/bash-script/f_case1/f_case1_17.jpg
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  140k  100  140k    0     0   300k      0 --:--:-- --:--:-- --:--:--  299k100  140k  100  140k    0     0   300k      0 --:--:-- --:--:-- --:--:--  299k
++ '[' x86_64 = x86_64 ']'
+++ du -kh /mnt/d/project/bash-script/f_case1/f_case1_17.jpg
+++ grep -Eo '[0-9]{1,4}'
+++ head -1
++ file_size=144
++ '[' 144 == 0 ']'
++ cat /mnt/d/project/bash-script/f_case1/f_case1_17.jpg
++ grep '404 Not Found'
++ for i in {1..100}
++ filename_url=https://s1.cdn.autoevolution.com/images/news/gallery/inside-the-2023-hot-wheels-case-f-here-is-the-sixth-super-treasure-hunt-of-the-year_18.jpg
++ output_filename=/mnt/d/project/bash-script/f_case1/f_case1_18.jpg
++ curl https://s1.cdn.autoevolution.com/images/news/gallery/inside-the-2023-hot-wheels-case-f-here-is-the-sixth-super-treasure-hunt-of-the-year_18.jpg --output /mnt/d/project/bash-script/f_case1/f_case1_18.jpg
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  169k  100  169k    0     0   705k      0 --:--:-- --:--:-- --:--:--  705k
++ '[' x86_64 = x86_64 ']'
+++ du -kh /mnt/d/project/bash-script/f_case1/f_case1_18.jpg
+++ grep -Eo '[0-9]{1,4}'
+++ head -1
++ file_size=172
++ '[' 172 == 0 ']'
++ cat /mnt/d/project/bash-script/f_case1/f_case1_18.jpg
++ grep '404 Not Found'
++ for i in {1..100}
++ filename_url=https://s1.cdn.autoevolution.com/images/news/gallery/inside-the-2023-hot-wheels-case-f-here-is-the-sixth-super-treasure-hunt-of-the-year_19.jpg
++ output_filename=/mnt/d/project/bash-script/f_case1/f_case1_19.jpg
++ curl https://s1.cdn.autoevolution.com/images/news/gallery/inside-the-2023-hot-wheels-case-f-here-is-the-sixth-super-treasure-hunt-of-the-year_19.jpg --output /mnt/d/project/bash-script/f_case1/f_case1_19.jpg
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  132k  100  132k    0     0   595k      0 --:--:-- --:--:-- --:--:--  595k
++ '[' x86_64 = x86_64 ']'
+++ du -kh /mnt/d/project/bash-script/f_case1/f_case1_19.jpg
+++ grep -Eo '[0-9]{1,4}'
+++ head -1
++ file_size=136
++ '[' 136 == 0 ']'
++ cat /mnt/d/project/bash-script/f_case1/f_case1_19.jpg
++ grep '404 Not Found'
++ for i in {1..100}
++ filename_url=https://s1.cdn.autoevolution.com/images/news/gallery/inside-the-2023-hot-wheels-case-f-here-is-the-sixth-super-treasure-hunt-of-the-year_20.jpg
++ output_filename=/mnt/d/project/bash-script/f_case1/f_case1_20.jpg
++ curl https://s1.cdn.autoevolution.com/images/news/gallery/inside-the-2023-hot-wheels-case-f-here-is-the-sixth-super-treasure-hunt-of-the-year_20.jpg --output /mnt/d/project/bash-script/f_case1/f_case1_20.jpg
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  136k  100  136k    0     0   623k      0 --:--:-- --:--:-- --:--:--  623k
++ '[' x86_64 = x86_64 ']'
+++ du -kh /mnt/d/project/bash-script/f_case1/f_case1_20.jpg
+++ grep -Eo '[0-9]{1,4}'
+++ head -1
++ file_size=140
++ '[' 140 == 0 ']'
++ cat /mnt/d/project/bash-script/f_case1/f_case1_20.jpg
++ grep '404 Not Found'
++ for i in {1..100}
++ filename_url=https://s1.cdn.autoevolution.com/images/news/gallery/inside-the-2023-hot-wheels-case-f-here-is-the-sixth-super-treasure-hunt-of-the-year_21.jpg
++ output_filename=/mnt/d/project/bash-script/f_case1/f_case1_21.jpg
++ curl https://s1.cdn.autoevolution.com/images/news/gallery/inside-the-2023-hot-wheels-case-f-here-is-the-sixth-super-treasure-hunt-of-the-year_21.jpg --output /mnt/d/project/bash-script/f_case1/f_case1_21.jpg
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  127k  100  127k    0     0   569k      0 --:--:-- --:--:-- --:--:--  569k
++ '[' x86_64 = x86_64 ']'
+++ du -kh /mnt/d/project/bash-script/f_case1/f_case1_21.jpg
+++ grep -Eo '[0-9]{1,4}'
+++ head -1
++ file_size=128
++ '[' 128 == 0 ']'
++ cat /mnt/d/project/bash-script/f_case1/f_case1_21.jpg
++ grep '404 Not Found'
++ for i in {1..100}
++ filename_url=https://s1.cdn.autoevolution.com/images/news/gallery/inside-the-2023-hot-wheels-case-f-here-is-the-sixth-super-treasure-hunt-of-the-year_22.jpg
++ output_filename=/mnt/d/project/bash-script/f_case1/f_case1_22.jpg
++ curl https://s1.cdn.autoevolution.com/images/news/gallery/inside-the-2023-hot-wheels-case-f-here-is-the-sixth-super-treasure-hunt-of-the-year_22.jpg --output /mnt/d/project/bash-script/f_case1/f_case1_22.jpg
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  128k  100  128k    0     0   575k      0 --:--:-- --:--:-- --:--:--  575k
++ '[' x86_64 = x86_64 ']'
+++ du -kh /mnt/d/project/bash-script/f_case1/f_case1_22.jpg
+++ grep -Eo '[0-9]{1,4}'
+++ head -1
++ file_size=132
++ '[' 132 == 0 ']'
++ cat /mnt/d/project/bash-script/f_case1/f_case1_22.jpg
++ grep '404 Not Found'
++ for i in {1..100}
++ filename_url=https://s1.cdn.autoevolution.com/images/news/gallery/inside-the-2023-hot-wheels-case-f-here-is-the-sixth-super-treasure-hunt-of-the-year_23.jpg
++ output_filename=/mnt/d/project/bash-script/f_case1/f_case1_23.jpg
++ curl https://s1.cdn.autoevolution.com/images/news/gallery/inside-the-2023-hot-wheels-case-f-here-is-the-sixth-super-treasure-hunt-of-the-year_23.jpg --output /mnt/d/project/bash-script/f_case1/f_case1_23.jpg
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  142k  100  142k    0     0   312k      0 --:--:-- --:--:-- --:--:--  312k
++ '[' x86_64 = x86_64 ']'
+++ du -kh /mnt/d/project/bash-script/f_case1/f_case1_23.jpg
+++ grep -Eo '[0-9]{1,4}'
+++ head -1
++ file_size=144
++ '[' 144 == 0 ']'
++ cat /mnt/d/project/bash-script/f_case1/f_case1_23.jpg
++ grep '404 Not Found'
++ for i in {1..100}
++ filename_url=https://s1.cdn.autoevolution.com/images/news/gallery/inside-the-2023-hot-wheels-case-f-here-is-the-sixth-super-treasure-hunt-of-the-year_24.jpg
++ output_filename=/mnt/d/project/bash-script/f_case1/f_case1_24.jpg
++ curl https://s1.cdn.autoevolution.com/images/news/gallery/inside-the-2023-hot-wheels-case-f-here-is-the-sixth-super-treasure-hunt-of-the-year_24.jpg --output /mnt/d/project/bash-script/f_case1/f_case1_24.jpg
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  138k  100  138k    0     0   590k      0 --:--:-- --:--:-- --:--:--  590k
++ '[' x86_64 = x86_64 ']'
+++ du -kh /mnt/d/project/bash-script/f_case1/f_case1_24.jpg
+++ grep -Eo '[0-9]{1,4}'
+++ head -1
++ file_size=140
++ '[' 140 == 0 ']'
++ cat /mnt/d/project/bash-script/f_case1/f_case1_24.jpg
++ grep '404 Not Found'
++ for i in {1..100}
++ filename_url=https://s1.cdn.autoevolution.com/images/news/gallery/inside-the-2023-hot-wheels-case-f-here-is-the-sixth-super-treasure-hunt-of-the-year_25.jpg
++ output_filename=/mnt/d/project/bash-script/f_case1/f_case1_25.jpg
++ curl https://s1.cdn.autoevolution.com/images/news/gallery/inside-the-2023-hot-wheels-case-f-here-is-the-sixth-super-treasure-hunt-of-the-year_25.jpg --output /mnt/d/project/bash-script/f_case1/f_case1_25.jpg
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  167k  100  167k    0     0   714k      0 --:--:-- --:--:-- --:--:--  711k
++ '[' x86_64 = x86_64 ']'
+++ du -kh /mnt/d/project/bash-script/f_case1/f_case1_25.jpg
+++ grep -Eo '[0-9]{1,4}'
+++ head -1
++ file_size=168
++ '[' 168 == 0 ']'
++ cat /mnt/d/project/bash-script/f_case1/f_case1_25.jpg
++ grep '404 Not Found'
++ for i in {1..100}
++ filename_url=https://s1.cdn.autoevolution.com/images/news/gallery/inside-the-2023-hot-wheels-case-f-here-is-the-sixth-super-treasure-hunt-of-the-year_26.jpg
++ output_filename=/mnt/d/project/bash-script/f_case1/f_case1_26.jpg
++ curl https://s1.cdn.autoevolution.com/images/news/gallery/inside-the-2023-hot-wheels-case-f-here-is-the-sixth-super-treasure-hunt-of-the-year_26.jpg --output /mnt/d/project/bash-script/f_case1/f_case1_26.jpg
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  138k  100  138k    0     0   296k      0 --:--:-- --:--:-- --:--:--  296k
++ '[' x86_64 = x86_64 ']'
+++ du -kh /mnt/d/project/bash-script/f_case1/f_case1_26.jpg
+++ grep -Eo '[0-9]{1,4}'
+++ head -1
++ file_size=140
++ '[' 140 == 0 ']'
++ cat /mnt/d/project/bash-script/f_case1/f_case1_26.jpg
++ grep '404 Not Found'
++ for i in {1..100}
++ filename_url=https://s1.cdn.autoevolution.com/images/news/gallery/inside-the-2023-hot-wheels-case-f-here-is-the-sixth-super-treasure-hunt-of-the-year_27.jpg
++ output_filename=/mnt/d/project/bash-script/f_case1/f_case1_27.jpg
++ curl https://s1.cdn.autoevolution.com/images/news/gallery/inside-the-2023-hot-wheels-case-f-here-is-the-sixth-super-treasure-hunt-of-the-year_27.jpg --output /mnt/d/project/bash-script/f_case1/f_case1_27.jpg
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 34  131k   34 46021    0     0   114k      0  0:00:01 --:--:--  0:00:01  114k100  131k  100  131k    0     0   284k      0 --:--:-- --:--:-- --:--:--  284k
++ '[' x86_64 = x86_64 ']'
+++ du -kh /mnt/d/project/bash-script/f_case1/f_case1_27.jpg
+++ grep -Eo '[0-9]{1,4}'
+++ head -1
++ file_size=132
++ '[' 132 == 0 ']'
++ cat /mnt/d/project/bash-script/f_case1/f_case1_27.jpg
++ grep '404 Not Found'
++ for i in {1..100}
++ filename_url=https://s1.cdn.autoevolution.com/images/news/gallery/inside-the-2023-hot-wheels-case-f-here-is-the-sixth-super-treasure-hunt-of-the-year_28.jpg
++ output_filename=/mnt/d/project/bash-script/f_case1/f_case1_28.jpg
++ curl https://s1.cdn.autoevolution.com/images/news/gallery/inside-the-2023-hot-wheels-case-f-here-is-the-sixth-super-treasure-hunt-of-the-year_28.jpg --output /mnt/d/project/bash-script/f_case1/f_case1_28.jpg
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  138k  100  138k    0     0   269k      0 --:--:-- --:--:-- --:--:--  269k
++ '[' x86_64 = x86_64 ']'
+++ du -kh /mnt/d/project/bash-script/f_case1/f_case1_28.jpg
+++ grep -Eo '[0-9]{1,4}'
+++ head -1
++ file_size=140
++ '[' 140 == 0 ']'
++ cat /mnt/d/project/bash-script/f_case1/f_case1_28.jpg
++ grep '404 Not Found'
++ for i in {1..100}
++ filename_url=https://s1.cdn.autoevolution.com/images/news/gallery/inside-the-2023-hot-wheels-case-f-here-is-the-sixth-super-treasure-hunt-of-the-year_29.jpg
++ output_filename=/mnt/d/project/bash-script/f_case1/f_case1_29.jpg
++ curl https://s1.cdn.autoevolution.com/images/news/gallery/inside-the-2023-hot-wheels-case-f-here-is-the-sixth-super-treasure-hunt-of-the-year_29.jpg --output /mnt/d/project/bash-script/f_case1/f_case1_29.jpg
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  124k  100  124k    0     0   547k      0 --:--:-- --:--:-- --:--:--  547k
++ '[' x86_64 = x86_64 ']'
+++ du -kh /mnt/d/project/bash-script/f_case1/f_case1_29.jpg
+++ grep -Eo '[0-9]{1,4}'
+++ head -1
++ file_size=128
++ '[' 128 == 0 ']'
++ cat /mnt/d/project/bash-script/f_case1/f_case1_29.jpg
++ grep '404 Not Found'
++ for i in {1..100}
++ filename_url=https://s1.cdn.autoevolution.com/images/news/gallery/inside-the-2023-hot-wheels-case-f-here-is-the-sixth-super-treasure-hunt-of-the-year_30.jpg
++ output_filename=/mnt/d/project/bash-script/f_case1/f_case1_30.jpg
++ curl https://s1.cdn.autoevolution.com/images/news/gallery/inside-the-2023-hot-wheels-case-f-here-is-the-sixth-super-treasure-hunt-of-the-year_30.jpg --output /mnt/d/project/bash-script/f_case1/f_case1_30.jpg
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  139k  100  139k    0     0   595k      0 --:--:-- --:--:-- --:--:--  592k
++ '[' x86_64 = x86_64 ']'
+++ du -kh /mnt/d/project/bash-script/f_case1/f_case1_30.jpg
+++ grep -Eo '[0-9]{1,4}'
+++ head -1
++ file_size=140
++ '[' 140 == 0 ']'
++ cat /mnt/d/project/bash-script/f_case1/f_case1_30.jpg
++ grep '404 Not Found'
++ for i in {1..100}
++ filename_url=https://s1.cdn.autoevolution.com/images/news/gallery/inside-the-2023-hot-wheels-case-f-here-is-the-sixth-super-treasure-hunt-of-the-year_31.jpg
++ output_filename=/mnt/d/project/bash-script/f_case1/f_case1_31.jpg
++ curl https://s1.cdn.autoevolution.com/images/news/gallery/inside-the-2023-hot-wheels-case-f-here-is-the-sixth-super-treasure-hunt-of-the-year_31.jpg --output /mnt/d/project/bash-script/f_case1/f_case1_31.jpg
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  161k  100  161k    0     0   693k      0 --:--:-- --:--:-- --:--:--  693k
++ '[' x86_64 = x86_64 ']'
+++ du -kh /mnt/d/project/bash-script/f_case1/f_case1_31.jpg
+++ grep -Eo '[0-9]{1,4}'
+++ head -1
++ file_size=164
++ '[' 164 == 0 ']'
++ cat /mnt/d/project/bash-script/f_case1/f_case1_31.jpg
++ grep '404 Not Found'
++ for i in {1..100}
++ filename_url=https://s1.cdn.autoevolution.com/images/news/gallery/inside-the-2023-hot-wheels-case-f-here-is-the-sixth-super-treasure-hunt-of-the-year_32.jpg
++ output_filename=/mnt/d/project/bash-script/f_case1/f_case1_32.jpg
++ curl https://s1.cdn.autoevolution.com/images/news/gallery/inside-the-2023-hot-wheels-case-f-here-is-the-sixth-super-treasure-hunt-of-the-year_32.jpg --output /mnt/d/project/bash-script/f_case1/f_case1_32.jpg
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  146k  100  146k    0     0   661k      0 --:--:-- --:--:-- --:--:--  661k
++ '[' x86_64 = x86_64 ']'
+++ du -kh /mnt/d/project/bash-script/f_case1/f_case1_32.jpg
+++ grep -Eo '[0-9]{1,4}'
+++ head -1
++ file_size=148
++ '[' 148 == 0 ']'
++ cat /mnt/d/project/bash-script/f_case1/f_case1_32.jpg
++ grep '404 Not Found'
++ for i in {1..100}
++ filename_url=https://s1.cdn.autoevolution.com/images/news/gallery/inside-the-2023-hot-wheels-case-f-here-is-the-sixth-super-treasure-hunt-of-the-year_33.jpg
++ output_filename=/mnt/d/project/bash-script/f_case1/f_case1_33.jpg
++ curl https://s1.cdn.autoevolution.com/images/news/gallery/inside-the-2023-hot-wheels-case-f-here-is-the-sixth-super-treasure-hunt-of-the-year_33.jpg --output /mnt/d/project/bash-script/f_case1/f_case1_33.jpg
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  127k  100  127k    0     0   575k      0 --:--:-- --:--:-- --:--:--  578k
++ '[' x86_64 = x86_64 ']'
+++ du -kh /mnt/d/project/bash-script/f_case1/f_case1_33.jpg
+++ grep -Eo '[0-9]{1,4}'
+++ head -1
++ file_size=128
++ '[' 128 == 0 ']'
++ cat /mnt/d/project/bash-script/f_case1/f_case1_33.jpg
++ grep '404 Not Found'
++ for i in {1..100}
++ filename_url=https://s1.cdn.autoevolution.com/images/news/gallery/inside-the-2023-hot-wheels-case-f-here-is-the-sixth-super-treasure-hunt-of-the-year_34.jpg
++ output_filename=/mnt/d/project/bash-script/f_case1/f_case1_34.jpg
++ curl https://s1.cdn.autoevolution.com/images/news/gallery/inside-the-2023-hot-wheels-case-f-here-is-the-sixth-super-treasure-hunt-of-the-year_34.jpg --output /mnt/d/project/bash-script/f_case1/f_case1_34.jpg
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  136k  100  136k    0     0   585k      0 --:--:-- --:--:-- --:--:--  585k
++ '[' x86_64 = x86_64 ']'
+++ du -kh /mnt/d/project/bash-script/f_case1/f_case1_34.jpg
+++ grep -Eo '[0-9]{1,4}'
+++ head -1
++ file_size=140
++ '[' 140 == 0 ']'
++ cat /mnt/d/project/bash-script/f_case1/f_case1_34.jpg
++ grep '404 Not Found'
++ for i in {1..100}
++ filename_url=https://s1.cdn.autoevolution.com/images/news/gallery/inside-the-2023-hot-wheels-case-f-here-is-the-sixth-super-treasure-hunt-of-the-year_35.jpg
++ output_filename=/mnt/d/project/bash-script/f_case1/f_case1_35.jpg
++ curl https://s1.cdn.autoevolution.com/images/news/gallery/inside-the-2023-hot-wheels-case-f-here-is-the-sixth-super-treasure-hunt-of-the-year_35.jpg --output /mnt/d/project/bash-script/f_case1/f_case1_35.jpg
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  141k  100  141k    0     0   640k      0 --:--:-- --:--:-- --:--:--  640k
++ '[' x86_64 = x86_64 ']'
+++ du -kh /mnt/d/project/bash-script/f_case1/f_case1_35.jpg
+++ grep -Eo '[0-9]{1,4}'
+++ head -1
++ file_size=144
++ '[' 144 == 0 ']'
++ cat /mnt/d/project/bash-script/f_case1/f_case1_35.jpg
++ grep '404 Not Found'
++ for i in {1..100}
++ filename_url=https://s1.cdn.autoevolution.com/images/news/gallery/inside-the-2023-hot-wheels-case-f-here-is-the-sixth-super-treasure-hunt-of-the-year_36.jpg
++ output_filename=/mnt/d/project/bash-script/f_case1/f_case1_36.jpg
++ curl https://s1.cdn.autoevolution.com/images/news/gallery/inside-the-2023-hot-wheels-case-f-here-is-the-sixth-super-treasure-hunt-of-the-year_36.jpg --output /mnt/d/project/bash-script/f_case1/f_case1_36.jpg
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  363k  100  363k    0     0   707k      0 --:--:-- --:--:-- --:--:--  707k
++ '[' x86_64 = x86_64 ']'
+++ du -kh /mnt/d/project/bash-script/f_case1/f_case1_36.jpg
+++ grep -Eo '[0-9]{1,4}'
+++ head -1
++ file_size=364
++ '[' 364 == 0 ']'
++ cat /mnt/d/project/bash-script/f_case1/f_case1_36.jpg
++ grep '404 Not Found'
++ for i in {1..100}
++ filename_url=https://s1.cdn.autoevolution.com/images/news/gallery/inside-the-2023-hot-wheels-case-f-here-is-the-sixth-super-treasure-hunt-of-the-year_37.jpg
++ output_filename=/mnt/d/project/bash-script/f_case1/f_case1_37.jpg
++ curl https://s1.cdn.autoevolution.com/images/news/gallery/inside-the-2023-hot-wheels-case-f-here-is-the-sixth-super-treasure-hunt-of-the-year_37.jpg --output /mnt/d/project/bash-script/f_case1/f_case1_37.jpg
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  148k  100  148k    0     0   344k      0 --:--:-- --:--:-- --:--:--  343k
++ '[' x86_64 = x86_64 ']'
+++ du -kh /mnt/d/project/bash-script/f_case1/f_case1_37.jpg
+++ grep -Eo '[0-9]{1,4}'
+++ head -1
++ file_size=152
++ '[' 152 == 0 ']'
++ cat /mnt/d/project/bash-script/f_case1/f_case1_37.jpg
++ grep '404 Not Found'
++ for i in {1..100}
++ filename_url=https://s1.cdn.autoevolution.com/images/news/gallery/inside-the-2023-hot-wheels-case-f-here-is-the-sixth-super-treasure-hunt-of-the-year_38.jpg
++ output_filename=/mnt/d/project/bash-script/f_case1/f_case1_38.jpg
++ curl https://s1.cdn.autoevolution.com/images/news/gallery/inside-the-2023-hot-wheels-case-f-here-is-the-sixth-super-treasure-hunt-of-the-year_38.jpg --output /mnt/d/project/bash-script/f_case1/f_case1_38.jpg
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 15069    0 15069    0     0  29663      0 --:--:-- --:--:-- --:--:-- 29663
++ '[' x86_64 = x86_64 ']'
+++ du -kh /mnt/d/project/bash-script/f_case1/f_case1_38.jpg
+++ grep -Eo '[0-9]{1,4}'
+++ head -1
++ file_size=16
++ '[' 16 == 0 ']'
++ cat /mnt/d/project/bash-script/f_case1/f_case1_38.jpg
++ grep '404 Not Found'
+<title>404 Not Found</title>
+<meta name="description" content="404 Not Found">
+	<div class="col1width col1mg fl"><h1 class="newstitle">404 Not Found</h1></div>
++ rm -rf /mnt/d/project/bash-script/f_case1/f_case1_38.jpg
++ break
