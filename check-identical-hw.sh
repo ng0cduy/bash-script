@@ -3,7 +3,7 @@ HW_file="hw.txt"
 OS=$(uname -m)
 if [ "$OS" = "x86_64" ]
 then
-    HW_layered_folder="$Desktop/newHW_layered"
+    HW_layered_folder="$desktop/case-HW/img-storage"
 elif [ "$OS" = "arm64" ]
 then
     HW_layered_folder="$HOME/Desktop/newHW_layered"
@@ -14,6 +14,8 @@ while read line;
         if grep -q "$line" "temp_list.txt";
         then
             echo "$line"
+            echo "$line" >> "count_line.txt"
         fi
 done < "$HW_file"
-rm -rf "temp_list.txt"
+cat "count_line.txt" | wc -l
+rm -rf "temp_list.txt" "count_line.txt"
