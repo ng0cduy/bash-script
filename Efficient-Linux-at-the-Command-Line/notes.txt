@@ -1,5 +1,5 @@
 Note:
-
+# Simple commands
 1. ls -1 : print list item in 1 colume
 ls -l marks directories with a d at the beginning of the line
 
@@ -43,4 +43,5 @@ for f in $FILES; do
  mv mammals/$f reptiles
 done
 
-stop at page 48 09012024
+# STANDARD ERROR (STDERR) AND REDIRECTION
+redirect stderr with the symbol 2>
