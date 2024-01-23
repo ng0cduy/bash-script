@@ -15,6 +15,6 @@ while read line; do
   then
     echo "Error"
   else
-    rm -rf --no-preserve-root "$deleted_path"
+    rm -rf "$deleted_path"
   fi
 done < "del_list.txt"
