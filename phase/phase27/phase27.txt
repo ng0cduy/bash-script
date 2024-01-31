@@ -4,3 +4,4 @@ https://jp.mercari.com/item/m12918389623,set_nar_99_vol_2,NA,NEW
 https://jp.mercari.com/item/m77601476173,nar_ramen_new,NA,NEW
 https://jp.mercari.com/item/m96846430683,Tomica_GR_86_Cup_car,NA,NEW
 https://jp.mercari.com/item/m90801468751,set_calsonic_impul_GTR,NA,NEW
+https://jp.mercari.com/item/m91601135720,GTR_advan,NA,NEW
