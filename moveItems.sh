@@ -21,6 +21,10 @@ while read line; do
     then
         echo "$to_phase not exist, create a new folder"
         mkdir -p "$to_phase"
+        mkdir -p "phase/phase$to"
+        cp "phase/phase$from/phase$from""_remain.txt" "phase/phase$to/phase$to.txt"
+        cp "phase/phase$from/phase$from""_remain.txt" "phase/phase$to/phase$to""_copy.txt"
+        cp "phase/phase$from/phase$from""_remain.txt" "phase/phase$to/phase$to""_remain.txt"
     fi
     mv "$move_path" "$new_path"
     echo "Moved $move_path to $new_path"
