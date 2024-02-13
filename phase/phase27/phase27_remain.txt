@@ -13,3 +13,6 @@ https://jp.mercari.com/item/m92751483552,vegeta-grand,NA,2nd
 https://jp.mercari.com/item/m32649006119,Tomica-50,NA,NEW
 https://jp.mercari.com/item/m90416419418,Nismo-fairlady-z,NA,NEW
 https://jp.mercari.com/item/m98806444819,set-2-lambor-urus,NA,NEW
+https://jp.mercari.com/item/m67725256299,vegeta-blue-wcf,NA,2ND
+https://jp.mercari.com/item/m96838429416,vegeta-dxf,NA,2ND
+https://jp.mercari.com/item/m97607032272,set_4_naruto_fig,NA,2ND
