@@ -1,13 +1,9 @@
 https://jp.mercari.com/item/m96846430683,Tomica_GR_86_Cup_car,NA,NEW
-https://jp.mercari.com/item/m90801468751,set_calsonic_impul_GTR,NA,NEW
 https://jp.mercari.com/item/m89480619507,Vegeta-msp,NA,2ND
 https://jp.mercari.com/item/m89480619507,wcf-meo,NA,2ND
 https://jp.mercari.com/item/m56511197300m,NISMO-400R-R33,NA,NEW
 https://jp.mercari.com/item/m77549280167,Ferrari-GTO-tomytec,NA,NEW
-https://jp.mercari.com/item/m82666807249,set-2-itachi-vol3,NA,NEW
-https://jp.mercari.com/item/m39483540142,set-4-tomica,NA,NEW
 https://jp.mercari.com/shops/product/KhL93o7D7Vg7YW8sGZhrm5,gokublue-msp,NA,2ND
-https://jp.mercari.com/item/m34122290866,set-4-nar-99-vol-3,NA,NEW
 https://jp.mercari.com/item/m60985628357,set-5-nar-99-vol-3,NA,NEW
 https://jp.mercari.com/item/m92751483552,vegeta-grand,NA,2nd
 https://jp.mercari.com/item/m32649006119,Tomica-50,NA,NEW
@@ -16,4 +12,3 @@ https://jp.mercari.com/item/m98806444819,set-2-lambor-urus,NA,NEW
 https://jp.mercari.com/item/m67725256299,vegeta-blue-wcf,NA,2ND
 https://jp.mercari.com/item/m96838429416,vegeta-dxf,NA,2ND
 https://jp.mercari.com/item/m97607032272,set_4_naruto_fig,NA,2ND
-https://jp.mercari.com/item/m35232537891,tomica-lambor,NA,2ND
