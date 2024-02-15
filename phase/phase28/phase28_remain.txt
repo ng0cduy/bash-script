@@ -9,3 +9,6 @@ https://jp.mercari.com/item/m90416419418,Nismo-fairlady-z,NA,NEW
 https://jp.mercari.com/item/m98806444819,set-2-lambor-urus,NA,NEW
 https://jp.mercari.com/item/m67725256299,vegeta-blue-wcf,NA,2ND
 https://jp.mercari.com/item/m96838429416,vegeta-dxf,NA,2ND
+https://jp.mercari.com/item/m39594481030,goku-uub-match-makers,NA,2ND
+https://jp.mercari.com/item/m99446474202,Goku-dxf,NA,2ND
+https://jp.mercari.com/item/m38725602136,vegeta-set-2,NA,2ND

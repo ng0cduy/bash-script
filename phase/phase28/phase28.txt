@@ -18,4 +18,6 @@ https://jp.mercari.com/item/m96838429416,vegeta-dxf,NA,2ND
 https://jp.mercari.com/item/m97607032272,set_4_naruto_fig,JP,2ND
 https://jp.mercari.com/item/m35232537891,tomica-lambor,JP,NEW
 https://jp.mercari.com/item/m37448624463,goku-mai-rua-dwc,JP,2ND
-
+https://jp.mercari.com/item/m39594481030,goku-uub-match-makers,NA,2ND
+https://jp.mercari.com/item/m99446474202,Goku-dxf,NA,2ND
+https://jp.mercari.com/item/m38725602136,vegeta-set-2,NA,2ND
