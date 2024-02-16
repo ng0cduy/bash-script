@@ -1,3 +1,4 @@
+Tomica_GR_86_Cup_car,NEW
 set_calsonic_impul_GTR,NEW
 wcf-meo,2ND
 set-2-itachi-vol3,NEW
@@ -8,5 +9,5 @@ set_4_naruto_fig,2ND
 tomica-lambor,NEW
 goku-mai-rua-dwc,2ND
 ---------------------------------------------
-Tổng đơn:        9
+Tổng đơn: 10
 ---------------------------------------------
