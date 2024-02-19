@@ -159,11 +159,18 @@ unset color_prompt force_color_prompt
 
 push_git(){
     date=$(date '+%Y%m%d%H%M%S')
-    git status
-    git add .
-    git commit -m "update files to $date"
-    git push
+    if git status | grep "modified:"
+    then
+        git add .
+        git commit -m "update files to $date"
+        git push
+    else
+        echo "Nothing to commmit"
+    fi
+
 }
+
+alias pg="push_git"
 
 export fetch_mer_script="/mnt/d/project/bash-script/fetch_img_by_list.sh"
 export bash_scipt_repo="/mnt/d/project/bash-script"
