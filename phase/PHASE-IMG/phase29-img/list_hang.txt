@@ -1,4 +1,9 @@
+Vegeta-msp,2ND
+NISMO-400R-R33,NEW
+Ferrari-GTO-tomytec,NEW
+gokublue-msp,2ND
+set-5-nar-99-vol-3,NEW
 vegeta-blue-wcf,2ND
 ---------------------------------------------
-Tổng đơn: 1
+Tổng đơn:        6
 ---------------------------------------------
