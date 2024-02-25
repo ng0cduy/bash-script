@@ -14,3 +14,6 @@ https://jp.mercari.com/item/m91623755301,kks-99,NA,2ND
 https://jp.mercari.com/item/m15279288482,itachi-hinata-shisui-wcf,NA,NEW
 https://jp.mercari.com/item/m29619509125,nguu-ma-vuong-SC,NA,2ND
 https://jp.mercari.com/item/m40431597583,tomica-limited-land-cruiser,NA,NEW
+https://jp.mercari.com/item/m54860257083,tomica-calsonic,NA,NEW
+https://jp.mercari.com/item/m95813903341,Tomica-SUPER-GT-GT500-2018-COLOR,NA,NEW
+
