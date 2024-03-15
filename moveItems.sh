@@ -1,4 +1,4 @@
-#!/bin/bash -euox
+#!/bin/bash
 echo "Reading data from a file:"
 from=$1
 to=$2
