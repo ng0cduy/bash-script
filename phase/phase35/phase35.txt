@@ -1,6 +1,6 @@
-https://jp.mercari.com/item/m40469069765,lee-sakura-vol-4,NA,NEW
+https://jp.mercari.com/item/m40469069765,lee-sakura-vol-4,JP,NEW
 https://jp.mercari.com/en/item/m43004847732,tomytec-land-cruiser-brown,NA,NEW
-https://jp.mercari.com/en/item/m16572191799,Tomica-bentley,NA,NEW
+https://jp.mercari.com/en/item/m16572191799,Tomica-bentley,JP,NEW
 https://jp.mercari.com/en/item/m81864776538,madara-top,NA,2ND
 https://jp.mercari.com/en/item/m21407769300,kks-shisui-99,NA,2ND
 https://jp.mercari.com/en/item/m93604201842,sasukeVS-myACA,NA,2ND
@@ -14,3 +14,6 @@ https://jp.mercari.com/en/item/m95444372591,obito-VS,NA,NEW
 https://jp.mercari.com/en/item/m18420466624,3narutoVS,NA,NEW
 https://jp.mercari.com/en/item/m51624370319,set-8-wcf-nar-99-kks-minato-vol2-shisui-vol3-2skr-vol4-sasori-guy-vol4-sasuke-vol-5,NA,NEW
 https://paypayfleamarket.yahoo.co.jp/item/z308425358,6-2wcf-naruto,NA,NEW
+https://jp.mercari.com/item/m54863161197,MOTUL AUTECH GT-R,NA,NEW
+https://jp.mercari.com/en/item/m86074634833,GT-R-2018-Fuji-Winner,NA,NEW
+https://jp.mercari.com/item/m33420489646,GT-R-2017,NA,NEW
