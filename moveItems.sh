@@ -25,6 +25,7 @@ while read line; do
         cp "phase/phase$from/phase$from""_remain.txt" "phase/phase$to/phase$to.txt"
         cp "phase/phase$from/phase$from""_remain.txt" "phase/phase$to/phase$to""_copy.txt"
         cp "phase/phase$from/phase$from""_remain.txt" "phase/phase$to/phase$to""_remain.txt"
+        fetch_img "$to"
     fi
     mv "$move_path" "$new_path"
     echo "Moved $move_path to $new_path"
