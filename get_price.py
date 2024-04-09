@@ -7,7 +7,7 @@ from deep_translator import GoogleTranslator
 webdriver_path = 'chromedriver-mac-arm64/chromedriver'
 
 # URL of the webpage you want to scrape
-url = 'https://jp.mercari.com/en/item/m88261750661'
+url = 'https://jp.mercari.com/en/item/m51252320310'
 
 # Initialize Chrome WebDriver
 service = Service(webdriver_path)
