@@ -43,7 +43,10 @@ url = 'https://jp.mercari.com/en/item/m51252320310'
 
 # Initialize Chrome WebDriver
 service = Service(webdriver_path)
-driver = webdriver.Chrome(service=service,options=chrome_options)
+if check_architecture() == "AMD":
+    driver = webdriver.Chrome(service=service,options=chrome_options)
+else:
+    driver = webdriver.Chrome(service=service)
 driver.implicitly_wait(10)
 # Navigate to the webpage
 driver.get(url)
