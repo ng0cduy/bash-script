@@ -23,14 +23,12 @@ def check_system():
     else:
         return "Unknown"
 
-print("Operating System:", check_system())
 
 # Path to your Chrome WebDriver executable
 if check_architecture() == "ARM":
     webdriver_path = 'chromedriver-mac-arm64/chromedriver'
 else:
     webdriver_path = 'chromedriver-linux64/chromedriver'
-    # chrome_binary='/mnt/c/Program\ Files/Google/Chrome/Application/chrome.exe'
 
 ## Setup chrome options
 chrome_options = Options()

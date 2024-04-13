@@ -45,6 +45,7 @@ do
     ID=$(echo "$link" | rev | cut -d'/' -f 1 | rev)
     state=$(echo "$line" | cut -d ',' -f 3)
     condition=$(echo "$line" | cut -d ',' -f 4)
+    user_url=$(echo "$line" | cut -d ',' -f 5)
     #parse bought link and remain link(not available yet)
     if [ "$state" = "JP" ] || [ "$state" = "JP-VN" ]
     then
@@ -81,6 +82,7 @@ do
         mkdir "$product_folder"
         touch "$product_folder/secret_link"
         echo "$ID" >> "$product_folder/secret_link"
+        echo "$user_url" >> "$product_folder/secret_link"
         chmod 444 "$product_folder/secret_link"
         if [[ "$link" == *"mercari"* ]];
         then
