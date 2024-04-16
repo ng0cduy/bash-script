@@ -56,17 +56,28 @@ for url in urls:
     # Navigate to the webpage
     driver.get(url)
     price_xpath='/html/body/div[1]/div/div[3]/main/article/div[2]/section[1]/section[1]/div/div[1]/div/span[2]'
+    price_xpath_shop='/html/body/div[1]/div[1]/div[2]/main/article/div[2]/section[1]/section[1]/div/div/span[2]'
     name_xpath='/html/body/div[1]/div/div[3]/main/article/div[2]/section[1]/div/div/div/h1'
+    name_xpath_shop='/html/body/div[1]/div[1]/div[2]/main/article/div[2]/section[1]/div[1]/div/div/h1'
     condition_xpath='/html/body/div[1]/div/div[3]/main/article/div[2]/section[3]/div[2]/div[3]/div[2]/span'
     condition_xpath1='/html/body/div[1]/div[1]/div[3]/main/article/div[2]/section[3]/div[2]/div[2]/div[2]/span'
+    condition_xpath_shop='/html/body/div[1]/div[1]/div[2]/main/article/div[2]/section[3]/div[2]/div[2]/div[2]/span'
     user_xpath='/html/body/div[1]/div/div[3]/main/article/div[2]/section[5]/div[2]/a'
+    user_xpath_shop='/html/body/div[1]/div[1]/div[2]/main/article/div[2]/section[4]/div[2]/div[2]/a'
 
     # Find the element containing the price (replace 'xpath_expression' with the actual XPath of the element)
-    price_element = driver.find_element(by=By.XPATH,value=price_xpath)
-    name_element = driver.find_element(by=By.XPATH,value=name_xpath)
-    condition_element = driver.find_element(by=By.XPATH,value=condition_xpath)
-    condition1_element = driver.find_element(by=By.XPATH,value=condition_xpath1)
-    user_xpath = driver.find_element(by=By.XPATH,value=user_xpath)
+    if "shops" in url:
+        price_element = driver.find_element(by=By.XPATH,value=price_xpath_shop)
+        name_element = driver.find_element(by=By.XPATH,value=name_xpath_shop)
+        condition_element = driver.find_element(by=By.XPATH,value=condition_xpath_shop)
+        condition1_element = driver.find_element(by=By.XPATH,value=condition_xpath_shop)
+        user_xpath = driver.find_element(by=By.XPATH,value=user_xpath_shop)
+    else:
+        price_element = driver.find_element(by=By.XPATH,value=price_xpath)
+        name_element = driver.find_element(by=By.XPATH,value=name_xpath)
+        condition_element = driver.find_element(by=By.XPATH,value=condition_xpath)
+        condition1_element = driver.find_element(by=By.XPATH,value=condition_xpath1)
+        user_xpath = driver.find_element(by=By.XPATH,value=user_xpath)
     translator = GoogleTranslator(source='ja', target='en')
 
     # Extract the price value
@@ -89,6 +100,7 @@ for url in urls:
     user_xpath=user_xpath.get_attribute("href")
     product_info = f"{url},{english_name},NA,{product_condition},{user_xpath}\n"
     products_list.append(product_info)
+    print(product_info)
 driver.quit()
 
 with open ('output.txt','w') as f:
