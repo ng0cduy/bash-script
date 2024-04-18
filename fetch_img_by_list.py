@@ -93,7 +93,7 @@ for url in urls:
         product_condition=condition_in_en
     elif condition1_in_en in CONDITION_STATE:
         product_condition=condition1_in_en
-    if product_condition == CONDITION_STATE[0]:
+    if product_condition == CONDITION_STATE[0] or product_condition == CONDITION_STATE[1]:
         product_condition = "NEW"
     else:
         product_condition = "2ND"
