@@ -22,5 +22,5 @@ else
 fi
 cat "output.txt" >> "$input_dir/phase$input_path.txt"
 fetch_img "$input_path"
-echo > "input.txt"
-echo > "output.txt"
+rm "input.txt" "output.txt"
+touch "input.txt" "output.txt"
