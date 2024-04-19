@@ -26,4 +26,4 @@ while read line; do
 #   else
 
 #   fi
-done < "del_list.txt"
+done < "cleanupWorkspace.txt"

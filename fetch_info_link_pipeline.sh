@@ -1,7 +1,7 @@
 #!/usr/bin/bash -x
 set -e
 
-python3 fetch_img_by_list.py
+python3 fetch_info_link.py
 
 export fetch_mer_script="/mnt/d/project/bash-script/fetch_img_by_list.sh"
 export bash_scipt_repo="/mnt/d/project/bash-script"

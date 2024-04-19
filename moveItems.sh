@@ -30,4 +30,4 @@ while read line; do
     echo "Moved $move_path to $new_path"
   fi
 fetch_img "$to"
-done < "move_list.txt"
+done < "moveItems.txt"

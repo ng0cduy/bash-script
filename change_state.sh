@@ -24,3 +24,6 @@ fetch_img()
 }
 
 fetch_img $current
+
+rm $change_state_file
+touch $change_state_file
