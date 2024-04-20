@@ -1,14 +1,8 @@
 #!/usr/bin/bash -x
+source function.sh
 set -e
 
 python3 fetch_info_link.py
-
-export fetch_mer_script="/mnt/d/project/bash-script/fetch_img_by_list.sh"
-export bash_scipt_repo="/mnt/d/project/bash-script"
-fetch_img()
-{
-    bash -x "$fetch_mer_script" "$bash_scipt_repo/phase/phase$1/phase$1.txt" /mnt/d/project/bash-script/phase/PHASE-IMG
-}
 
 input_path=$1
 input_dir="phase/phase$input_path"
