@@ -37,7 +37,7 @@ chrome_options.add_argument("--no-sandbox")
 # Path to your Chrome WebDriver executable
 if check_architecture() == "ARM":
     webdriver_path = 'chromedriver-mac-arm64/chromedriver'
-    chrome_options.binary_location = f"chrome-mac-arm64/chrome"
+    chrome_options.binary_location = f"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 else:
     webdriver_path = 'chromedriver-linux64/chromedriver'
     chrome_options.binary_location = f"chrome-linux64/chrome"
@@ -47,7 +47,7 @@ else:
 service = Service(webdriver_path)
 driver = webdriver.Chrome(service=service,options=chrome_options)
 products_list = []
-with open("input.txt",'r') as urls_file:
+with open("fetch_info_link_input.txt",'r') as urls_file:
     urls=urls_file.readlines()
 for url in urls:
     url=url.strip()
@@ -103,6 +103,6 @@ for url in urls:
     print(product_info)
 driver.quit()
 
-with open ('output.txt','w') as f:
+with open ('fetch_info_link_output.txt','w') as f:
     for item in products_list:
         f.write(item)
