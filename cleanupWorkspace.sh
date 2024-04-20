@@ -27,3 +27,6 @@ while read line; do
 
 #   fi
 done < "cleanupWorkspace.txt"
+
+rm "cleanupWorkspace.txt"
+touch "cleanupWorkspace.txt"
