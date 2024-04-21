@@ -14,7 +14,7 @@ else
     mkdir -p "$input_dir"
     touch "$input_dir/phase$input_path.txt"
 fi
-cat "output.txt" >> "$input_dir/phase$input_path.txt"
+cat "fetch_info_link_output.txt" >> "$input_dir/phase$input_path.txt"
 fetch_img "$input_path"
-rm "input.txt" "output.txt"
-touch "input.txt" "output.txt"
+rm "fetch_info_link_input.txt" "fetch_info_link_output.txt"
+touch "fetch_info_link_input.txt" "fetch_info_link_output.txt"
