@@ -1,9 +1,12 @@
 #!/bin/bash
+set -e
+source function.sh
 echo "Reading data from a file:"
 from=$1
 to=$2
 while read line; do
-  line1=$(echo "$line" | rev | cut -d "/" -f1 | rev)
+  line0=$(echo "$line" | cut -d "," -f1)
+  line1=$(echo "$line0" | rev | cut -d "/" -f1 | rev)
   file_path=$(grep -r "$line1" "phase/PHASE-IMG/phase$from-img" | cut -d ":" -f1)
   file_path1=$(echo "$file_path" | cut -d '/' -f1)
   file_path2=$(echo "$file_path" | cut -d '/' -f2)
@@ -29,5 +32,20 @@ while read line; do
     mv "$move_path" "$new_path"
     echo "Moved $move_path to $new_path"
   fi
-fetch_img "$to"
+# fetch_img "$to"
+done < "moveItems.txt"
+deleted_line_file_orig="phase/phase$from/phase$from.txt"
+deleted_line_file_copy="phase/phase$from/phase$from""_copy.txt"
+echo $delted_line_file_copy
+while read line; do
+    line0=$(echo "$line" | cut -d "," -f1)
+    line1=$(echo "$line0" | rev | cut -d "/" -f1 | rev)
+    echo $line1
+    replace_line_number=$(cat $deleted_line_file_orig | grep -n $line1 | cut -d: -f1)
+    echo $replace_line_number
+    if [ -n $replace_line_number ]
+    then
+        sed -i "$replace_line_number d" $deleted_line_file_orig
+        sed -i "$replace_line_number d" $deleted_line_file_copy
+    fi
 done < "moveItems.txt"
