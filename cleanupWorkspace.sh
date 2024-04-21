@@ -17,12 +17,12 @@ while read line; do
     deleted_path="$file_path1/$file_path2/$file_path3/$file_path4"
     delete_file_path="phase/$phase_num/$phase_num"
     replace_line_number=$(cat "$delete_file_path.txt" | grep -n $line1 | cut -d: -f1)
-    if [ -n $replace_line_number ]
-    then
-        sed -i "$replace_line_number d" "$delete_file_path.txt"
-        sed -i "$replace_line_number d" "$delete_file_path""_copy.txt"
-        echo "Delete line with pattern $line1 in $delete_file_path.txt and $delete_file_path""_copy.txt"
-    fi
+    # if [ -n $replace_line_number ]
+    # then
+    #     sed -i "$replace_line_number d" "$delete_file_path.txt"
+    #     sed -i "$replace_line_number d" "$delete_file_path""_copy.txt"
+    #     echo "Delete line with pattern $line1 in $delete_file_path.txt and $delete_file_path""_copy.txt"
+    # fi
     echo "$file_path is with ID: $line1"
     echo "$deleted_path"
     echo "deleting $deleted_path"
