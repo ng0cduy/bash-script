@@ -80,7 +80,7 @@ for url in urls:
 
     # Extract the price value
     CONDITION_STATE=["New, unused","unused","almost unused","There is no noticeable scratches or dirt","there are some scratches and dirt.","There are scratches and dirt","Overall condition is poor"]
-    price = int(remove_non_numeric(price_element.text))
+    price = int(remove_non_numeric(price_element.text).strip())
     japanese_name = name_element.text
     english_name = translator.translate(japanese_name).replace("[", "").replace("]", "")
     condition_in_ja=condition_element.text
@@ -98,7 +98,7 @@ for url in urls:
     user_xpath=user_xpath.get_attribute("href")
     product_info = f"{url},{english_name},NA,{product_condition},{user_xpath}\n"
     products_list.append(product_info)
-    print(product_info)
+    print(f"{product_info.strip()},{price}")
 driver.quit()
 
 with open ('fetch_info_link_output.txt','w') as f:
