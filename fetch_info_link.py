@@ -4,11 +4,10 @@ from selenium.webdriver.common.by import By
 from deep_translator import GoogleTranslator
 from selenium.webdriver.chrome.options import Options
 import platform
-import sys
-import subprocess
+import re
 
-def split_cmd(cmd):
-    return cmd.split(" ")
+def remove_non_numeric(input_string):
+    return re.sub(r'[^0-9]', '', input_string)
 
 def check_architecture():
     arch = platform.machine()
@@ -55,34 +54,33 @@ for url in urls:
 
     # Navigate to the webpage
     driver.get(url)
-    price_xpath='/html/body/div[1]/div/div[3]/main/article/div[2]/section[1]/section[1]/div/div[1]/div/span[2]'
-    price_xpath_shop='/html/body/div[1]/div[1]/div[2]/main/article/div[2]/section[1]/section[1]/div/div/span[2]'
-    name_xpath='/html/body/div[1]/div/div[3]/main/article/div[2]/section[1]/div/div/div/h1'
-    name_xpath_shop='/html/body/div[1]/div[1]/div[2]/main/article/div[2]/section[1]/div[1]/div/div/h1'
-    condition_xpath='/html/body/div[1]/div/div[3]/main/article/div[2]/section[3]/div[2]/div[3]/div[2]/span'
-    condition_xpath1='/html/body/div[1]/div[1]/div[3]/main/article/div[2]/section[3]/div[2]/div[2]/div[2]/span'
-    condition_xpath_shop='/html/body/div[1]/div[1]/div[2]/main/article/div[2]/section[3]/div[2]/div[2]/div[2]/span'
-    user_xpath='/html/body/div[1]/div/div[3]/main/article/div[2]/section[5]/div[2]/a'
-    user_xpath_shop='/html/body/div[1]/div[1]/div[2]/main/article/div[2]/section[4]/div[2]/div[2]/a'
-
+    if "mercari" in url:
+        price_xpath='/html/body/div[1]/div/div[3]/main/article/div[2]/section[1]/section[1]/div/div[1]/div/span[2]'
+        price_xpath_shop='/html/body/div[1]/div[1]/div[2]/main/article/div[2]/section[1]/section[1]/div/div/span[2]'
+        name_xpath='/html/body/div[1]/div/div[3]/main/article/div[2]/section[1]/div/div/div/h1'
+        name_xpath_shop='/html/body/div[1]/div[1]/div[2]/main/article/div[2]/section[1]/div[1]/div/div/h1'
+        condition_xpath='/html/body/div[1]/div/div[3]/main/article/div[2]/section[3]/div[2]/div[3]/div[2]/span'
+        condition_xpath1='/html/body/div[1]/div[1]/div[3]/main/article/div[2]/section[3]/div[2]/div[2]/div[2]/span'
+        condition_xpath_shop='/html/body/div[1]/div[1]/div[2]/main/article/div[2]/section[3]/div[2]/div[2]/div[2]/span'
+        user_xpath='/html/body/div[1]/div/div[3]/main/article/div[2]/section[5]/div[2]/a'
+        user_xpath_shop='/html/body/div[1]/div[1]/div[2]/main/article/div[2]/section[4]/div[2]/div[2]/a'
+    elif "paypayfleamarket" in url:
+        price_xpath='/html/body/div[1]/div/main/div[1]/div[2]/aside/div[1]/div[1]/div[3]/div/div/span'
+        name_xpath='/html/body/div[1]/div/main/div[1]/div[2]/aside/div[1]/div[1]/div[1]/div[1]/h1/span'
+        condition_xpath='/html/body/div[1]/div/main/div[1]/div[2]/aside/div[2]/table/tbody/tr[3]/td/span'
+        condition_xpath1='/html/body/div[1]/div/main/div[1]/div[2]/aside/div[2]/table/tbody/tr[3]/td/span'
+        user_xpath='/html/body/div[1]/div/main/div[1]/div[2]/aside/div[4]/div[1]/div[1]/a'
     # Find the element containing the price (replace 'xpath_expression' with the actual XPath of the element)
-    if "shops" in url:
-        price_element = driver.find_element(by=By.XPATH,value=price_xpath_shop)
-        name_element = driver.find_element(by=By.XPATH,value=name_xpath_shop)
-        condition_element = driver.find_element(by=By.XPATH,value=condition_xpath_shop)
-        condition1_element = driver.find_element(by=By.XPATH,value=condition_xpath_shop)
-        user_xpath = driver.find_element(by=By.XPATH,value=user_xpath_shop)
-    else:
-        price_element = driver.find_element(by=By.XPATH,value=price_xpath)
-        name_element = driver.find_element(by=By.XPATH,value=name_xpath)
-        condition_element = driver.find_element(by=By.XPATH,value=condition_xpath)
-        condition1_element = driver.find_element(by=By.XPATH,value=condition_xpath1)
-        user_xpath = driver.find_element(by=By.XPATH,value=user_xpath)
+    price_element = driver.find_element(by=By.XPATH,value=price_xpath)
+    name_element = driver.find_element(by=By.XPATH,value=name_xpath)
+    condition_element = driver.find_element(by=By.XPATH,value=condition_xpath)
+    condition1_element = driver.find_element(by=By.XPATH,value=condition_xpath1)
+    user_xpath = driver.find_element(by=By.XPATH,value=user_xpath)
     translator = GoogleTranslator(source='ja', target='en')
 
     # Extract the price value
-    CONDITION_STATE=["New, unused","almost unused","There is no noticeable scratches or dirt","there are some scratches and dirt.","There are scratches and dirt","Overall condition is poor"]
-    price = int(price_element.text.replace(',',''))
+    CONDITION_STATE=["New, unused","unused","almost unused","There is no noticeable scratches or dirt","there are some scratches and dirt.","There are scratches and dirt","Overall condition is poor"]
+    price = int(remove_non_numeric(price_element.text))
     japanese_name = name_element.text
     english_name = translator.translate(japanese_name).replace("[", "").replace("]", "")
     condition_in_ja=condition_element.text
@@ -93,7 +91,7 @@ for url in urls:
         product_condition=condition_in_en
     elif condition1_in_en in CONDITION_STATE:
         product_condition=condition1_in_en
-    if product_condition == CONDITION_STATE[0] or product_condition == CONDITION_STATE[1]:
+    if product_condition == CONDITION_STATE[0] or product_condition == CONDITION_STATE[1] or product_condition == CONDITION_STATE[2]:
         product_condition = "NEW"
     else:
         product_condition = "2ND"
