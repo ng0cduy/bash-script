@@ -82,7 +82,7 @@ for url in urls:
     CONDITION_STATE=["New, unused","unused","almost unused","There is no noticeable scratches or dirt","there are some scratches and dirt.","There are scratches and dirt","Overall condition is poor"]
     price = int(remove_non_numeric(price_element.text).strip())
     japanese_name = name_element.text
-    english_name = translator.translate(japanese_name).replace("[", "").replace("]", "")
+    english_name = translator.translate(japanese_name).replace("[", "").replace("]", "").replace("/","")
     condition_in_ja=condition_element.text
     condition_in_en=translator.translate(condition_in_ja)
     condition1_in_ja=condition1_element.text
