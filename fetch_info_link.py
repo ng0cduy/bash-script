@@ -3,44 +3,21 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from deep_translator import GoogleTranslator
 from selenium.webdriver.chrome.options import Options
-import platform
-import re
+import lib
 
-def remove_non_numeric(input_string):
-    return re.sub(r'[^0-9]', '', input_string)
-
-def check_architecture():
-    arch = platform.machine()
-    if 'arm' in arch.lower():
-        return "ARM"
-    elif 'amd' in arch.lower() or "x86_64" in arch.lower():
-        return "AMD"
-    else:
-        return "Unknown"
-
-def check_system():
-    system = platform.system()
-    if system == 'Windows':
-        return "Windows"
-    elif system == 'Linux':
-        return "Linux"
-    else:
-        return "Unknown"
 
 ## Setup chrome options
 chrome_options = Options()
-chrome_options.add_argument("--headless") # Ensure GUI is off
+# chrome_options.add_argument("--headless") # Ensure GUI is off
 chrome_options.add_argument("--no-sandbox")
 
-
 # Path to your Chrome WebDriver executable
-if check_architecture() == "ARM":
+if lib.check_architecture() == "ARM":
     webdriver_path = 'chromedriver-mac-arm64/chromedriver'
     chrome_options.binary_location = f"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 else:
     webdriver_path = 'chromedriver-linux64/chromedriver'
     chrome_options.binary_location = f"chrome-linux64/chrome"
-
 
 # Initialize Chrome WebDriver
 service = Service(webdriver_path)
@@ -51,7 +28,6 @@ with open("fetch_info_link_input.txt",'r') as urls_file:
 for url in urls:
     url=url.strip()
     driver.implicitly_wait(10)
-
     # Navigate to the webpage
     driver.get(url)
     if "mercari" in url:
@@ -70,7 +46,6 @@ for url in urls:
         condition_xpath='/html/body/div[1]/div/main/div[1]/div[2]/aside/div[2]/table/tbody/tr[3]/td/span'
         condition_xpath1='/html/body/div[1]/div/main/div[1]/div[2]/aside/div[2]/table/tbody/tr[3]/td/span'
         user_xpath='/html/body/div[1]/div/main/div[1]/div[2]/aside/div[4]/div[1]/div[1]/a'
-    # Find the element containing the price (replace 'xpath_expression' with the actual XPath of the element)
     price_element = driver.find_element(by=By.XPATH,value=price_xpath)
     name_element = driver.find_element(by=By.XPATH,value=name_xpath)
     condition_element = driver.find_element(by=By.XPATH,value=condition_xpath)
@@ -80,7 +55,7 @@ for url in urls:
 
     # Extract the price value
     CONDITION_STATE=["New, unused","unused","almost unused","There is no noticeable scratches or dirt","there are some scratches and dirt.","There are scratches and dirt","Overall condition is poor"]
-    price = int(remove_non_numeric(price_element.text).strip())
+    price = int(lib.remove_non_numeric(price_element.text).strip())
     japanese_name = name_element.text
     english_name = translator.translate(japanese_name).replace("[", "").replace("]", "").replace("/","")
     condition_in_ja=condition_element.text
