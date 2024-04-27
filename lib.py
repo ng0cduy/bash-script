@@ -21,3 +21,6 @@ def check_system():
 
 def remove_non_numeric(input_string):
     return re.sub(r'[^0-9]', '', input_string)
+
+def split_cmd(cmd):
+    return cmd.split(" ")
