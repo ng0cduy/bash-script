@@ -3,7 +3,7 @@ source function.sh
 set -e
 change_state_file="change_state_list.txt"
 current=$1
-current_file="phase/phase$current/phase$current.txt"
+current_file="phase/phaseInfo/phase$current/phase$current.txt"
 while IFS= read -r line
 do
     replace_line_number=$(cat $current_file | grep -n $line | cut -d: -f1)

@@ -176,7 +176,7 @@ export fetch_mer_script="/mnt/d/project/bash-script/fetch_img_by_list.sh"
 export bash_scipt_repo="/mnt/d/project/bash-script"
 fetch_img()
 {
-    bash -x "$fetch_mer_script" "$bash_scipt_repo/phase/phase$1/phase$1.txt" /mnt/d/project/bash-script/phase/PHASE-IMG
+    bash -x "$fetch_mer_script" "$bash_scipt_repo/phase/phaseInfo/phase$1/phase$1.txt" /mnt/d/project/bash-script/phase/PHASE-IMG
 }
 
 parse_text()

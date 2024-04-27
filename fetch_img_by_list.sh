@@ -1,4 +1,5 @@
 #!/bin/bash -x
+set -e
 # ./fetch_img_by_list.sh phase/phase3/phase3.txt ~/Desktop/IMG-FOLDER 2>&1 | tee log.log
 # ./fetch_img_by_list.sh phase1.txt /mnt/c/Users/bduy1/Desktop 2>&1 | tee log.log
 # https://paypayfleamarket.yahoo.co.jp/item/z225582006

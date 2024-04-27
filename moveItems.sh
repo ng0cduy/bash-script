@@ -25,17 +25,17 @@ while read line; do
         echo "$to_phase not exist, create a new folder"
         mkdir -p "$to_phase"
         mkdir -p "phase/phase$to"
-        cp "phase/phase$from/phase$from""_remain.txt" "phase/phase$to/phase$to.txt"
-        cp "phase/phase$from/phase$from""_remain.txt" "phase/phase$to/phase$to""_copy.txt"
-        cp "phase/phase$from/phase$from""_remain.txt" "phase/phase$to/phase$to""_remain.txt"
+        cp "phase/phaseInfo/phase$from/phase$from""_remain.txt" "phase/phaseInfo/phase$to/phase$to.txt"
+        cp "phase/phaseInfo/phase$from/phase$from""_remain.txt" "phase/phaseInfo/phase$to/phase$to""_copy.txt"
+        cp "phase/phaseInfo/phase$from/phase$from""_remain.txt" "phase/phaseInfo/phase$to/phase$to""_remain.txt"
     fi
     mv "$move_path" "$new_path"
     echo "Moved $move_path to $new_path"
   fi
 # fetch_img "$to"
 done < "moveItems.txt"
-deleted_line_file_orig="phase/phase$from/phase$from.txt"
-deleted_line_file_copy="phase/phase$from/phase$from""_copy.txt"
+deleted_line_file_orig="phase/phaseInfo/phase$from/phase$from.txt"
+deleted_line_file_copy="phase/phaseInfo/phase$from/phase$from""_copy.txt"
 echo $delted_line_file_copy
 while read line; do
     line0=$(echo "$line" | cut -d "," -f1)

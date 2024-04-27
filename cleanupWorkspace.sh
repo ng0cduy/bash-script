@@ -15,7 +15,7 @@ while read line; do
     echo "Folder containes ID $line1 not exist"
   else
     deleted_path="$file_path1/$file_path2/$file_path3/$file_path4"
-    delete_file_path="phase/$phase_num/$phase_num"
+    delete_file_path="phase/phaseInfo/$phase_num/$phase_num"
     replace_line_number=$(cat "$delete_file_path.txt" | grep -n $line1 | cut -d: -f1)
     # if [ -n $replace_line_number ]
     # then
