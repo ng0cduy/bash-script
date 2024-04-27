@@ -98,7 +98,8 @@ for url in urls:
     user_xpath=user_xpath.get_attribute("href")
     product_info = f"{url},{english_name},NA,{product_condition},{user_xpath}\n"
     products_list.append(product_info)
-    print(f"{product_info.strip()},{price}")
+    price_format = '{:8,.0f}'.format(price*172)
+    print(f"{url}\t{english_name}\t{price_format}")
 driver.quit()
 
 with open ('fetch_info_link_output.txt','w') as f:
