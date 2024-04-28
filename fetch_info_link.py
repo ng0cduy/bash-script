@@ -8,7 +8,7 @@ import lib
 
 ## Setup chrome options
 chrome_options = Options()
-# chrome_options.add_argument("--headless") # Ensure GUI is off
+chrome_options.add_argument("--headless") # Ensure GUI is off
 chrome_options.add_argument("--no-sandbox")
 
 # Path to your Chrome WebDriver executable
@@ -44,7 +44,7 @@ for url in urls:
         price_xpath='/html/body/div[1]/div/main/div[1]/div[2]/aside/div[1]/div[1]/div[3]/div/div/span'
         name_xpath='/html/body/div[1]/div/main/div[1]/div[2]/aside/div[1]/div[1]/div[1]/div[1]/h1/span'
         condition_xpath='/html/body/div[1]/div/main/div[1]/div[2]/aside/div[2]/table/tbody/tr[3]/td/span'
-        condition_xpath1='/html/body/div[1]/div/main/div[1]/div[2]/aside/div[2]/table/tbody/tr[3]/td/span'
+        condition_xpath1='/html/body/div[1]/div/main/div[1]/div[2]/aside/div[2]/table/tbody/tr[2]/td/span'
         user_xpath='/html/body/div[1]/div/main/div[1]/div[2]/aside/div[4]/div[1]/div[1]/a'
     price_element = driver.find_element(by=By.XPATH,value=price_xpath)
     name_element = driver.find_element(by=By.XPATH,value=name_xpath)
