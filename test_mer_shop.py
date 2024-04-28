@@ -15,7 +15,7 @@ chrome_options.add_argument("--auto-open-devtools-for-tabs")
 # Path to your Chrome WebDriver executable
 if lib.check_architecture() == "ARM":
     webdriver_path = 'chromedriver-mac-arm64/chromedriver'
-    chrome_options.binary_location = f"chrome-mac-arm64/chrome"
+    chrome_options.binary_location = f"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 else:
     webdriver_path = 'chromedriver-linux64/chromedriver'
     chrome_options.binary_location = f"chrome-linux64/chrome"

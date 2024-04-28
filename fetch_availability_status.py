@@ -8,7 +8,7 @@ import lib
 
 ## Setup chrome options
 chrome_options = Options()
-# chrome_options.add_argument("--headless") # Ensure GUI is off
+chrome_options.add_argument("--headless") # Ensure GUI is off
 chrome_options.add_argument("--no-sandbox")
 
 
@@ -29,14 +29,27 @@ for url in urls:
     url=url.strip()
     driver.implicitly_wait(10)
     driver.get(url)
-    if "mercari" in url:
+    sold_or_not_state=""
+    if "item" in url:
         sold_or_not='/html/head/script[1]'
-    sold_or_not_state=driver.find_element(By.CSS_SELECTOR,'script[type="application/ld+json"]')
-    script_inner_html = sold_or_not_state.get_attribute("innerHTML")
-    sold_or_not_state_dict = json.loads(script_inner_html)
-    current_status = sold_or_not_state_dict['offers']['availability']
+        sold_or_not_state=driver.find_element(By.CSS_SELECTOR,'script[type="application/ld+json"]')
+        script_inner_html = sold_or_not_state.get_attribute("innerHTML")
+        sold_or_not_state_dict = json.loads(script_inner_html)
+        current_status = sold_or_not_state_dict['offers']['availability']
+        script_inner_html = sold_or_not_state.get_attribute("innerHTML")
+        sold_or_not_state_dict = json.loads(script_inner_html)
+        current_status = sold_or_not_state_dict['offers']['availability']
+    elif "product" in url:
+        sold_or_not='/html/body/div[1]/div[1]/div[2]/main/article/div[1]/section/div/div/div/div/div/div[2]/div[1]/div[2]/div/div[1]/div/div/div/div' # mer shop
+        try:
+            sold_or_not_state=driver.find_element(By.CSS_SELECTOR,'[aria-label="Sold"]') # mer shop
+            current_status = sold_or_not_state.get_attribute("aria-label") # mershop
+        except Exception as e:
+            current_status = "AVAILABLE"
+    elif "paypayfleamarket" in url:
+        pass
     url_formatted = "{:<45}".format(url)
-    if 'soldout' in current_status.lower():
+    if 'soldout' in current_status.lower() or 'sold' in current_status.lower():
         status = "{:<10}".format("SOLD")
     else:
         status = "{:<10}".format("AVAILABLE")
