@@ -8,7 +8,7 @@ import time
 
 ## Setup chrome options
 chrome_options = Options()
-# chrome_options.add_argument("--headless") # Ensure GUI is off
+chrome_options.add_argument("--headless") # Ensure GUI is off
 chrome_options.add_argument("--no-sandbox")
 chrome_options.add_argument("--auto-open-devtools-for-tabs")
 
@@ -31,21 +31,15 @@ driver = webdriver.Chrome(service=service, options=chrome_options)
 # Navigate to the desired webpage
 driver.implicitly_wait(10)
 driver.get("https://jp.mercari.com/en/shops/product/4hS6JVowJ3tfhfXpkkxzyB")
-driver.implicitly_wait(10)
 # Switch to the DevTools
-driver.find_element(By.TAG_NAME, 'body').send_keys(Keys.F12)
-driver.switch_to.window(driver.window_handles[-1])
-# driver.execute_script("DevToolsAPI.enterInspectElementMode()")
-elements=driver.find_elements(By.CSS_SELECTOR,'[aria-label="Sources"]')
-print(elements)
-# time.sleep(2)
-# elements = driver.find_elements_by_css_selector('.file')
-# for element in elements:
-#     print(element.text)
+img_link=''
 
-# elements = driver.find_elements(By.CSS_SELECTOR,".sources")
-# print(elements)
-# for element in elements:
-#     print(element.text)
-#     print()
-# driver.quit()
+driver.quit()
+
+for i in range (21):
+    href=f"/html/body/div[1]/div[1]/div[2]/main/article/div[1]/section/div/div/div/div/div/div[2]/div[1]/div[{i}]/div/div[1]/div/div/div/div/figure/div[2]/picture/img"
+    print(href)
+# /html/body/div[1]/div[1]/div[2]/main/article/div[1]/section/div/div/div/div/div/div[2]/div[1]/div[2]/div/div[1]/div/div/div/div/figure/div[2]/picture/img
+# /html/body/div[1]/div[1]/div[2]/main/article/div[1]/section/div/div/div/div/div/div[2]/div[1]/div[2]/div/div[2]/div/div/div/div/figure/div[2]/picture/img
+# /html/body/div[1]/div[1]/div[2]/main/article/div[1]/section/div/div/div/div/div/div[2]/div[1]/div[2]/div/div[3]/div/div/div/div/figure/div[2]/picture/img
+
