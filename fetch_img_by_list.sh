@@ -34,11 +34,11 @@ bought_list_without_link="$destination_folder/$_name_.txt"
 #create summary bought file
 rm -rf "$bought_list_without_link"
 rm -rf "$input_base_name""_remain.txt"
-touch "$bought_list_without_link"
+# touch "$bought_list_without_link"
 touch "$input_dir_name/$input_base_name""_remain.txt"
 # create images folder
 mkdir -p "$destination_folder"
-
+touch "$bought_list_without_link"
 while IFS= read -r line
 do
     link=$(echo "$line" | cut -d ',' -f 1)
@@ -85,7 +85,7 @@ do
         echo "$ID" >> "$product_folder/secret_link"
         echo "$user_url" >> "$product_folder/secret_link"
         chmod 444 "$product_folder/secret_link"
-        if [[ "$link" == *"mercari"* ]];
+        if [[ "$link" == *"jp.mercari.com/item"* ]] || [[ "$link" == *"jp.mercari.com/en/item"* ]];
         then
             for i in {1..20}
             do
@@ -106,7 +106,8 @@ do
                     break
                 fi
             done
-        else
+        elif [[ "$link" == *"paypayfleamarket.yahoo.co.jp/item"* ]];
+        then
             curl -s --output "a.html" "$link"
             links=$(cat "a.html" | grep -Eo "https://auctions.c.yimg.jp/images.auctions.yahoo.co.jp/image/dr000/auc[0-9]{4}/users/[A-Za-z0-9]*/i-img[A-Za-z0-9-]*.jpg"| sort -u)
             echo "$links" > temp.txt
@@ -120,6 +121,18 @@ do
             done < "temp.txt"
             rm -f "temp.txt"
             rm -f "a.html"
+        elif [[ "$link" == *"shops/product"* ]];
+        then
+            python3 fetch_mer_shop_img_list.py "$link"
+            i=1
+            while IFS= read -r line
+            do
+                filename="$name""_$i.jpg"
+                product_img="$product_folder/$filename"
+                curl "$line" --output "$product_img"
+                i=$((i+1))
+            done < "a.txt"
+            rm -f "a.txt"
         fi
     fi
 done < "$input"

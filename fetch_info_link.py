@@ -8,7 +8,7 @@ import lib
 
 ## Setup chrome options
 chrome_options = Options()
-chrome_options.add_argument("--headless") # Ensure GUI is off
+# chrome_options.add_argument("--headless") # Ensure GUI is off
 chrome_options.add_argument("--no-sandbox")
 
 # Path to your Chrome WebDriver executable
@@ -27,30 +27,49 @@ with open("fetch_info_link_input.txt",'r') as urls_file:
     urls=urls_file.readlines()
 for url in urls:
     url=url.strip()
-    driver.implicitly_wait(10)
+    driver.implicitly_wait(30)
     # Navigate to the webpage
     driver.get(url)
     if "mercari" in url:
-        price_xpath='/html/body/div[1]/div/div[3]/main/article/div[2]/section[1]/section[1]/div/div[1]/div/span[2]'
-        price_xpath_shop='/html/body/div[1]/div[1]/div[2]/main/article/div[2]/section[1]/section[1]/div/div/span[2]'
-        name_xpath='/html/body/div[1]/div/div[3]/main/article/div[2]/section[1]/div/div/div/h1'
-        name_xpath_shop='/html/body/div[1]/div[1]/div[2]/main/article/div[2]/section[1]/div[1]/div/div/h1'
-        condition_xpath='/html/body/div[1]/div/div[3]/main/article/div[2]/section[3]/div[2]/div[3]/div[2]/span'
-        condition_xpath1='/html/body/div[1]/div[1]/div[3]/main/article/div[2]/section[3]/div[2]/div[2]/div[2]/span'
-        condition_xpath_shop='/html/body/div[1]/div[1]/div[2]/main/article/div[2]/section[3]/div[2]/div[2]/div[2]/span'
-        user_xpath='/html/body/div[1]/div/div[3]/main/article/div[2]/section[5]/div[2]/a'
-        user_xpath_shop='/html/body/div[1]/div[1]/div[2]/main/article/div[2]/section[4]/div[2]/div[2]/a'
+        if "product" in url:
+            price_xpath='/html/body/div[1]/div[1]/div[2]/main/article/div[2]/section[1]/section[1]/div/div/span[2]'
+            name_xpath='/html/body/div[1]/div[1]/div[2]/main/article/div[2]/section[1]/div[1]/div/div/h1'
+            condition_xpath='/html/body/div[1]/div[1]/div[2]/main/article/div[2]/section[3]/div[2]/div[2]/div[2]/span'
+            condition_xpath1='/html/body/div[1]/div[1]/div[2]/main/article/div[2]/section[3]/div[2]/div[3]/div[2]/span'
+            user_xpath='/html/body/div[1]/div[1]/div[2]/main/article/div[2]/section[4]/div[2]/div[2]/a'
+        elif "item" in url:
+            price_xpath='/html/body/div[1]/div/div[3]/main/article/div[2]/section[1]/section[1]/div/div[1]/div/span[2]'
+            name_xpath='/html/body/div[1]/div/div[3]/main/article/div[2]/section[1]/div/div/div/h1'
+            condition_xpath='/html/body/div[1]/div/div[3]/main/article/div[2]/section[3]/div[2]/div[3]/div[2]/span'
+            condition_xpath1='/html/body/div[1]/div[1]/div[3]/main/article/div[2]/section[3]/div[2]/div[2]/div[2]/span'
+            user_xpath='/html/body/div[1]/div/div[3]/main/article/div[2]/section[5]/div[2]/a'
     elif "paypayfleamarket" in url:
         price_xpath='/html/body/div[1]/div/main/div[1]/div[2]/aside/div[1]/div[1]/div[3]/div/div/span'
         name_xpath='/html/body/div[1]/div/main/div[1]/div[2]/aside/div[1]/div[1]/div[1]/div[1]/h1/span'
         condition_xpath='/html/body/div[1]/div/main/div[1]/div[2]/aside/div[2]/table/tbody/tr[3]/td/span'
         condition_xpath1='/html/body/div[1]/div/main/div[1]/div[2]/aside/div[2]/table/tbody/tr[2]/td/span'
         user_xpath='/html/body/div[1]/div/main/div[1]/div[2]/aside/div[4]/div[1]/div[1]/a'
-    price_element = driver.find_element(by=By.XPATH,value=price_xpath)
-    name_element = driver.find_element(by=By.XPATH,value=name_xpath)
-    condition_element = driver.find_element(by=By.XPATH,value=condition_xpath)
-    condition1_element = driver.find_element(by=By.XPATH,value=condition_xpath1)
-    user_xpath = driver.find_element(by=By.XPATH,value=user_xpath)
+    try:
+        price_element = driver.find_element(by=By.XPATH,value=price_xpath)
+    except Exception as e:
+        print(f"Error in price in {url}")
+    try:
+        name_element = driver.find_element(by=By.XPATH,value=name_xpath)
+    except Exception as e:
+        print(f"Error in name in {url}")
+    try:
+        condition_element = driver.find_element(by=By.XPATH,value=condition_xpath)
+    except Exception as e:
+        print(f"Error in condition in {url}")
+    try:
+        condition1_element = driver.find_element(by=By.XPATH,value=condition_xpath1)
+    except Exception as e:
+        print(f"Error in condition1 in {url}")
+        condition1_element=condition_element
+    try:
+        user_xpath = driver.find_element(by=By.XPATH,value=user_xpath)
+    except Exception as e:
+        print(f"Error in user path in {url}")
     translator = GoogleTranslator(source='ja', target='en')
 
     # Extract the price value
