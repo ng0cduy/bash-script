@@ -5,7 +5,7 @@ set -e
 python3 fetch_info_link.py
 
 input_path=$1
-input_dir="phase/phase$input_path"
+input_dir="phase/phaseInfo/phase$input_path"
 if [ -d $input_dir ]
 then
     echo "$input_dir exist"
