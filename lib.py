@@ -24,3 +24,10 @@ def remove_non_numeric(input_string):
 
 def split_cmd(cmd):
     return cmd.split(" ")
+
+import re
+
+def remove_special_characters(text):
+    pattern = r'[^a-zA-Z0-9_\-\s]'
+    clean_text = re.sub(pattern, '', text)
+    return clean_text
