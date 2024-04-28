@@ -4,7 +4,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.keys import Keys
 import lib
-import time
+import sys
 
 ## Setup chrome options
 chrome_options = Options()
@@ -19,27 +19,28 @@ if lib.check_architecture() == "ARM":
 else:
     webdriver_path = 'chromedriver-linux64/chromedriver'
     chrome_options.binary_location = f"chrome-linux64/chrome"
-# Path to your chromedriver executable
 
-# Start Chrome with DevTools opened
-# chrome_options.add_experimental_option("debuggerAddress")
-
-# Initialize the WebDriver
 service = Service(webdriver_path)
 driver = webdriver.Chrome(service=service, options=chrome_options)
-
-# Navigate to the desired webpage
+link=sys.argv[1]
+driver.get(link)
 driver.implicitly_wait(10)
-driver.get("https://jp.mercari.com/en/shops/product/4hS6JVowJ3tfhfXpkkxzyB")
 # Switch to the DevTools
-img_link=''
+img_links=[]
+img_href_prefix="/html/body/div[1]/div[1]/div[2]/main/article/div[1]/section/div/div/div/div/div/div[2]/div[1]/div[2]/div/div["
+img_href_suffix="]/div/div/div/div/figure/div[2]/picture/img"
+for i in range (1,21):
+    href=f"{img_href_prefix}{i}{img_href_suffix}"
+    try:
+        picture_link = driver.find_element(by=By.XPATH,value=href)
+        img_source = picture_link.get_attribute("src").split("@")[0]
+        img_links.append(img_source)
+    except Exception as e:
+        print(f"END THE RETRIEVING IMG IN {link}")
+        break
+
+with open("a.txt","w") as f:
+    for item in img_links:
+        f.write(f"{item}\n")
 
 driver.quit()
-
-for i in range (21):
-    href=f"/html/body/div[1]/div[1]/div[2]/main/article/div[1]/section/div/div/div/div/div/div[2]/div[1]/div[{i}]/div/div[1]/div/div/div/div/figure/div[2]/picture/img"
-    print(href)
-# /html/body/div[1]/div[1]/div[2]/main/article/div[1]/section/div/div/div/div/div/div[2]/div[1]/div[2]/div/div[1]/div/div/div/div/figure/div[2]/picture/img
-# /html/body/div[1]/div[1]/div[2]/main/article/div[1]/section/div/div/div/div/div/div[2]/div[1]/div[2]/div/div[2]/div/div/div/div/figure/div[2]/picture/img
-# /html/body/div[1]/div[1]/div[2]/main/article/div[1]/section/div/div/div/div/div/div[2]/div[1]/div[2]/div/div[3]/div/div/div/div/figure/div[2]/picture/img
-
