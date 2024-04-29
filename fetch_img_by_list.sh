@@ -61,7 +61,7 @@ do
     product_folder_1="$destination_folder/[VN]_$name""_[$condition]"
     #check if secret file already exsist or not by checking name and ID, if not
     # create the secret file and curl img
-    #spawn a secret file into link, pass name and ID into link
+    # spawn a secret file into link, pass name and ID into link
     # else do nothing
     if [ -d "$product_folder" ]
     then
