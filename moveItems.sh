@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -x
 set -e
 source function.sh
 echo "Reading data from a file:"
@@ -24,7 +24,7 @@ while read line; do
     then
         echo "$to_phase not exist, create a new folder"
         mkdir -p "$to_phase"
-        mkdir -p "phase/phase$to"
+        mkdir -p "phase/phaseInfo/phase$to"
         cp "phase/phaseInfo/phase$from/phase$from""_remain.txt" "phase/phaseInfo/phase$to/phase$to.txt"
         cp "phase/phaseInfo/phase$from/phase$from""_remain.txt" "phase/phaseInfo/phase$to/phase$to""_copy.txt"
         cp "phase/phaseInfo/phase$from/phase$from""_remain.txt" "phase/phaseInfo/phase$to/phase$to""_remain.txt"
@@ -49,3 +49,6 @@ while read line; do
         sed -i "$replace_line_number d" $deleted_line_file_copy
     fi
 done < "moveItems.txt"
+
+rm -rf "moveItems.txt"
+touch "moveItems.txt"
