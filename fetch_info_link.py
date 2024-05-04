@@ -26,7 +26,7 @@ products_list = []
 with open("fetch_info_link_input.txt",'r') as urls_file:
     urls=urls_file.readlines()
 for url in urls:
-    url=url.strip()
+    url=url.strip().replace("/en","")
     driver.implicitly_wait(30)
     # Navigate to the webpage
     driver.get(url)
