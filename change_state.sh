@@ -9,9 +9,15 @@ do
     replace_line_number=$(cat $current_file | grep -n $line | cut -d: -f1)
     if [ -n $replace_line_number ]
     then
-        sed -i .bak "$replace_line_number s/,NA,/,JP,/" $current_file
-        sed -n "$replace_line_number p" $current_file
-        rm "phase/phaseInfo/phase$current/phase$current.txt.bak"
+        if uname -a | grep -i Linux
+        then
+            sed -i "$replace_line_number s/,NA,/,JP,/" $current_file
+            sed -n "$replace_line_number p" $current_file
+        else
+            sed -i .bak "$replace_line_number s/,NA,/,JP,/" $current_file
+            sed -n "$replace_line_number p" $current_file
+            rm "phase/phaseInfo/phase$current/phase$current.txt.bak"
+        fi
     fi
 done < "$change_state_file"
 
