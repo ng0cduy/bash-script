@@ -47,6 +47,7 @@ do
     state=$(echo "$line" | cut -d ',' -f 3)
     condition=$(echo "$line" | cut -d ',' -f 4)
     user_url=$(echo "$line" | cut -d ',' -f 5)
+    price=$(echo "$line" | cut -d ',' -f 6)
     #parse bought link and remain link(not available yet)
     if [ "$state" = "JP" ] || [ "$state" = "JP-VN" ]
     then
@@ -84,6 +85,7 @@ do
         touch "$product_folder/secret_link"
         echo "$ID" >> "$product_folder/secret_link"
         echo "$user_url" >> "$product_folder/secret_link"
+        echo "$price" >> "$product_folder/secret_link"
         chmod 444 "$product_folder/secret_link"
         if [[ "$link" == *"jp.mercari.com/item"* ]] || [[ "$link" == *"jp.mercari.com/en/item"* ]];
         then

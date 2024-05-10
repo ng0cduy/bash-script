@@ -8,7 +8,7 @@ import lib
 
 ## Setup chrome options
 chrome_options = Options()
-# chrome_options.add_argument("--headless") # Ensure GUI is off
+chrome_options.add_argument("--headless") # Ensure GUI is off
 chrome_options.add_argument("--no-sandbox")
 
 # Path to your Chrome WebDriver executable
@@ -90,7 +90,7 @@ for url in urls:
     else:
         product_condition = "2ND"
     user_xpath=user_xpath.get_attribute("href")
-    product_info = f"{url},{english_name},NA,{product_condition},{user_xpath}\n"
+    product_info = f"{url},{english_name},NA,{product_condition},{user_xpath}"
     products_list.append(product_info)
     price_format = '{:8,.0f}'.format(price*172)
     print(f"{url}\t{english_name}\t{price_format}")
@@ -98,4 +98,4 @@ driver.quit()
 
 with open ('fetch_info_link_output.txt','w') as f:
     for item in products_list:
-        f.write(item)
+        f.write(f"{item},{price*172}\n")
