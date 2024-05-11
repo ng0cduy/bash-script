@@ -1,7 +1,3 @@
-https://jp.mercari.com/item/m51041449735,NARUTO figure,NA,2ND
-https://jp.mercari.com/item/m68701455745,Dragon Ball Gohan Vegito Figure,NA,2ND
-https://jp.mercari.com/en/item/m98584130237,Dragon Ball Matchmakers 4 figures unboxed set,NA,2ND
-https://jp.mercari.com/item/m25047665634,This weeks limited price World Collectible Figure Dragon Ball Majin Buu Pure Evil,NA,2ND,https://jp.mercari.com/en/user/profile/570795213
-https://jp.mercari.com/item/m28811947737,Dragon Ball Work Collection 9 figures,NA,2ND,https://jp.mercari.com/en/user/profile/514509602
-https://jp.mercari.com/item/m22902671889,Ichiban Kuji Dragon Ball Z A Prize Figure Perfect Cell  Bonus,NA,NEW,https://jp.mercari.com/en/user/profile/698646679
-https://jp.mercari.com/item/m29671491420,NARUTO World Collectable Figure Vol 5 Complete Set of 5 Varieties,NA,NEW,https://jp.mercari.com/en/user/profile/107218181,756628
+https://jp.mercari.com/item/m51041449735,NARUTO figure,JP,2ND
+https://jp.mercari.com/item/m68701455745,Dragon Ball Gohan Vegito Figure,JP,2ND
+https://jp.mercari.com/en/item/m98584130237,Dragon Ball Matchmakers 4 figures unboxed set,JP,2ND
