@@ -1,0 +1,16 @@
+77,Andrew Jobbings Senior Kangaroo
+78,British Mathematical Olympiad Round 1
+79,British Mathematical Olympiad Round 2
+73,Cayley Mathematical Olympiad
+71,Grey Kangaroo
+74,Hamilton Mathematical Olympiad
+70,Intermediate Mathematical Challenge
+68,Junior Kangaroo
+67,Junior Mathematical Challenge
+69,Junior Mathematical Olympiad
+75,Maclaurin Mathematical Olympiad
+80,Mathematical Olympiad for Girls
+72,Pink Kangaroo
+183,Sample Answer Sheets
+76,Senior Mathematical Challenge
+65,Team Maths Challenge

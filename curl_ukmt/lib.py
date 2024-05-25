@@ -1,7 +1,8 @@
 import platform
 import re
 import os
-import subprocess
+from bs4 import BeautifulSoup
+
 def check_architecture():
     arch = platform.machine()
     if 'arm' in arch.lower():
@@ -26,6 +27,8 @@ def remove_non_numeric(input_string):
 def split_cmd(cmd):
     return cmd.split(" ")
 
+import re
+
 def remove_special_characters(text):
     pattern = r'[^a-zA-Z0-9_\-\s]'
     clean_text = re.sub(pattern, '', text)
@@ -33,7 +36,28 @@ def remove_special_characters(text):
 
 def create_folder(folder_path):
     try:
+        # Create the folder
         os.makedirs(folder_path, exist_ok=True)
         print(f"Folder created: {folder_path}")
     except Exception as e:
         print(f"Error creating folder: {e}")
+
+def find_pdf_links_in_file(file_path):
+    """
+    Find all PDF links in an HTML file.
+
+    :param file_path: The path to the HTML file.
+    :return: A list of URLs pointing to PDF files.
+    """
+    pdf_links = []
+    try:
+        with open(file_path, 'r', encoding='utf-8') as file:
+            soup = BeautifulSoup(file, 'html.parser')
+            for link in soup.find_all('a', href=True):
+                href = link['href']
+                if href.lower().endswith('.pdf'):
+                    pdf_links.append(href)
+    except Exception as e:
+        print(f"An error occurred: {e}")
+
+    return pdf_links
