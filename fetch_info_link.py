@@ -98,4 +98,4 @@ driver.quit()
 
 with open ('fetch_info_link_output.txt','w') as f:
     for item in products_list:
-        f.write(f"{item},{price*172}\n")
+        f.write(f"{item},{price}\n")

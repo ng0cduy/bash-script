@@ -85,7 +85,8 @@ do
         touch "$product_folder/secret_link"
         echo "$ID" >> "$product_folder/secret_link"
         echo "$user_url" >> "$product_folder/secret_link"
-        echo "$price" >> "$product_folder/secret_link"
+        result=$((price * 172))
+        echo "$result" >> "$product_folder/secret_link"
         chmod 444 "$product_folder/secret_link"
         if [[ "$link" == *"jp.mercari.com/item"* ]] || [[ "$link" == *"jp.mercari.com/en/item"* ]];
         then
