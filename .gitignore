@@ -6,4 +6,4 @@ chromedriver-mac-arm64/
 chrome-mac-arm64/
 function.sh
 __pycache__/
-.git_backup
+git_backup
