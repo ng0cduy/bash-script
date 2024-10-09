@@ -18,7 +18,7 @@ if lib.check_architecture() == "ARM":
     chrome_options.binary_location = f"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 else:
     webdriver_path = 'chromedriver-linux64/chromedriver'
-    chrome_options.binary_location = f"chrome-linux64/chrome"
+    chrome_options.binary_location = f"chrome-mac-arm64/chrome"
 
 # Initialize Chrome WebDriver
 service = Service(webdriver_path)
@@ -60,7 +60,7 @@ for url in urls:
         else:
             price = int(lib.remove_non_numeric(price_element.text).strip())
             price_format = '{:8,.0f}'.format(price*rate)
-            # print(f"Price is: {price}")
+            # print(f"Price is: {price}") # debuggging line
     #check for user_profile url
     for item in user_xpath:
         try:
@@ -70,7 +70,7 @@ for url in urls:
             continue
         else:
             user_url=user_xpath.get_attribute("href")
-            # print(f"User profile is: {user_xpath}")
+            # print(f"User profile is: {user_url}") # debuggging line
     # check for name:
     for item in name_xpath:
         try:
@@ -91,17 +91,17 @@ for url in urls:
         else:
             condition_in_ja=condition_element.text
             condition_in_en=translator.translate(condition_in_ja)
-            print(condition_in_en)
+            # print(condition_in_en) # debuggging line
             if condition_in_ja in CONDITION_STATE:
                 product_condition=condition_in_ja
             if product_condition == CONDITION_STATE[0] or product_condition == CONDITION_STATE[1]:
                 product_condition = "NEW"
             else:
                 product_condition = "2ND"
-    product_info = f"{url},{english_name},NA,{product_condition},{user_xpath},{price}"
+    product_info = f"{url},{english_name},NA,{product_condition},{user_url},{price}"
     products_list.append(product_info)
-    print(f"{url}\t{english_name}\t{price_format}")
-    driver.quit()
+    print(f"{url}\t{english_name}\t{price_format}\t{product_condition}")
+driver.quit()
 with open ('fetch_info_link_output.txt','w') as f:
     for item in products_list:
         f.write(f"{item}\n")
