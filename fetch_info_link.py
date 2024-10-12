@@ -36,20 +36,20 @@ for url in urls:
     driver.get(url)
     if "mercari" in url:
         if "product" in url:
-            price_xpath='/html/body/div[1]/div[1]/div[2]/main/article/div[2]/section[1]/section[1]/div/div/span[2]'
-            name_xpath='/html/body/div[1]/div[1]/div[2]/main/article/div[2]/section[1]/div[1]/div/div/h1'
+            price_xpath=['/html/body/div[1]/div[1]/div[2]/main/article/div[2]/section[1]/section[1]/div/div/span[2]']
+            name_xpath=['/html/body/div[1]/div[1]/div[2]/main/article/div[2]/section[1]/div[1]/div/div/h1']
             condition_xpath=['/html/body/div[1]/div[1]/div[2]/main/article/div[2]/section[3]/div[2]/div[2]/div[2]/span','/html/body/div[1]/div[1]/div[2]/main/article/div[2]/section[3]/div[2]/div[3]/div[2]/span']
-            user_xpath='/html/body/div[1]/div[1]/div[2]/main/article/div[2]/section[4]/div[2]/div[2]/a'
+            user_xpath=['/html/body/div[1]/div[1]/div[2]/main/article/div[2]/section[4]/div[2]/div[2]/a']
         elif "item" in url:
             price_xpath=['/html/body/div[1]/div/div[3]/main/article/div[2]/section[1]/section[1]/div/div[1]/div/span[2]']
             name_xpath=['/html/body/div[1]/div/div[3]/main/article/div[2]/section[1]/div/div/div/h1']
             condition_xpath=['/html/body/div[1]/div/div[3]/main/article/div[2]/section[3]/div[2]/div[3]/div[2]/span','/html/body/div[1]/div[1]/div[3]/main/article/div[2]/section[3]/div[2]/div[2]/div[2]/span']
             user_xpath=['/html/body/div[1]/div/div[3]/main/article/div[2]/section[5]/div[2]/a','/html/body/div[1]/div[1]/div[3]/main/article/div[2]/section[6]/div[2]/a']
     elif "paypayfleamarket" in url:
-        price_xpath='/html/body/div[1]/div/main/div[1]/div[2]/aside/div[1]/div[1]/div[3]/div/div/span'
-        name_xpath='/html/body/div[1]/div/main/div[1]/div[2]/aside/div[1]/div[1]/div[1]/div[1]/h1/span'
+        price_xpath=['/html/body/div[1]/div/main/div[1]/div[2]/aside/div[1]/div[1]/div[3]/div/div/span']
+        name_xpath=['/html/body/div[1]/div/main/div[1]/div[2]/aside/div[1]/div[1]/div[1]/div[1]/h1/span']
         condition_xpath=['/html/body/div[1]/div/main/div[1]/div[2]/aside/div[2]/table/tbody/tr[3]/td/span','/html/body/div[1]/div/main/div[1]/div[2]/aside/div[2]/table/tbody/tr[2]/td/span']
-        user_xpath='/html/body/div[1]/div/main/div[1]/div[2]/aside/div[4]/div[1]/div[1]/a'
+        user_xpath=['/html/body/div[1]/div/main/div[1]/div[2]/aside/div[4]/div[1]/div[1]/a']
     # check for price
     for item in price_xpath:
         try:
